@@ -367,6 +367,66 @@ func (x *EAMV8003) GetEamvt8032() float64 {
 	return 0
 }
 
+type EAMV8004 struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Eamvt8033     string                 `protobuf:"bytes,1,opt,name=eamvt8033,proto3" json:"eamvt8033,omitempty"`
+	Eamvt8034     bool                   `protobuf:"varint,2,opt,name=eamvt8034,proto3" json:"eamvt8034,omitempty"`
+	Eamvt8035     int32                  `protobuf:"varint,3,opt,name=eamvt8035,proto3" json:"eamvt8035,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *EAMV8004) Reset() {
+	*x = EAMV8004{}
+	mi := &file_community_apps_gramx_fifty_zero_ethos_mesh_demo_entities_proto_msgTypes[3]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *EAMV8004) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*EAMV8004) ProtoMessage() {}
+
+func (x *EAMV8004) ProtoReflect() protoreflect.Message {
+	mi := &file_community_apps_gramx_fifty_zero_ethos_mesh_demo_entities_proto_msgTypes[3]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use EAMV8004.ProtoReflect.Descriptor instead.
+func (*EAMV8004) Descriptor() ([]byte, []int) {
+	return file_community_apps_gramx_fifty_zero_ethos_mesh_demo_entities_proto_rawDescGZIP(), []int{3}
+}
+
+func (x *EAMV8004) GetEamvt8033() string {
+	if x != nil {
+		return x.Eamvt8033
+	}
+	return ""
+}
+
+func (x *EAMV8004) GetEamvt8034() bool {
+	if x != nil {
+		return x.Eamvt8034
+	}
+	return false
+}
+
+func (x *EAMV8004) GetEamvt8035() int32 {
+	if x != nil {
+		return x.Eamvt8035
+	}
+	return 0
+}
+
 var File_community_apps_gramx_fifty_zero_ethos_mesh_demo_entities_proto protoreflect.FileDescriptor
 
 const file_community_apps_gramx_fifty_zero_ethos_mesh_demo_entities_proto_rawDesc = "" +
@@ -404,7 +464,11 @@ const file_community_apps_gramx_fifty_zero_ethos_mesh_demo_entities_proto_rawDes
 	"\teamvt8031\x18\x1a \x01(\v29.community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8002R\teamvt8031\"F\n" +
 	"\bEAMV8003\x12\x1c\n" +
 	"\teamvt8005\x18\x01 \x01(\tR\teamvt8005\x12\x1c\n" +
-	"\teamvt8032\x18\x02 \x01(\x01R\teamvt8032BiZggithub.com/50gramx/eapp-golang-domain/community/apps/gramx/fifty/zero/ethos/mesh_demo/entities;entitiesb\x06proto3"
+	"\teamvt8032\x18\x02 \x01(\x01R\teamvt8032\"d\n" +
+	"\bEAMV8004\x12\x1c\n" +
+	"\teamvt8033\x18\x01 \x01(\tR\teamvt8033\x12\x1c\n" +
+	"\teamvt8034\x18\x02 \x01(\bR\teamvt8034\x12\x1c\n" +
+	"\teamvt8035\x18\x03 \x01(\x05R\teamvt8035BiZggithub.com/50gramx/eapp-golang-domain/community/apps/gramx/fifty/zero/ethos/mesh_demo/entities;entitiesb\x06proto3"
 
 var (
 	file_community_apps_gramx_fifty_zero_ethos_mesh_demo_entities_proto_rawDescOnce sync.Once
@@ -418,34 +482,35 @@ func file_community_apps_gramx_fifty_zero_ethos_mesh_demo_entities_proto_rawDesc
 	return file_community_apps_gramx_fifty_zero_ethos_mesh_demo_entities_proto_rawDescData
 }
 
-var file_community_apps_gramx_fifty_zero_ethos_mesh_demo_entities_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
+var file_community_apps_gramx_fifty_zero_ethos_mesh_demo_entities_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
 var file_community_apps_gramx_fifty_zero_ethos_mesh_demo_entities_proto_goTypes = []any{
 	(*EAMV8002)(nil),              // 0: community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8002
 	(*EAMV8001)(nil),              // 1: community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8001
 	(*EAMV8003)(nil),              // 2: community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8003
-	(*timestamppb.Timestamp)(nil), // 3: google.protobuf.Timestamp
-	(*durationpb.Duration)(nil),   // 4: google.protobuf.Duration
-	(*emptypb.Empty)(nil),         // 5: google.protobuf.Empty
-	(*structpb.Struct)(nil),       // 6: google.protobuf.Struct
-	(*anypb.Any)(nil),             // 7: google.protobuf.Any
-	(*fieldmaskpb.FieldMask)(nil), // 8: google.protobuf.FieldMask
-	(*structpb.ListValue)(nil),    // 9: google.protobuf.ListValue
+	(*EAMV8004)(nil),              // 3: community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8004
+	(*timestamppb.Timestamp)(nil), // 4: google.protobuf.Timestamp
+	(*durationpb.Duration)(nil),   // 5: google.protobuf.Duration
+	(*emptypb.Empty)(nil),         // 6: google.protobuf.Empty
+	(*structpb.Struct)(nil),       // 7: google.protobuf.Struct
+	(*anypb.Any)(nil),             // 8: google.protobuf.Any
+	(*fieldmaskpb.FieldMask)(nil), // 9: google.protobuf.FieldMask
+	(*structpb.ListValue)(nil),    // 10: google.protobuf.ListValue
 }
 var file_community_apps_gramx_fifty_zero_ethos_mesh_demo_entities_proto_depIdxs = []int32{
-	2, // 0: community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8001.eamvt8010:type_name -> community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8003
-	3, // 1: community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8001.eamvt8020:type_name -> google.protobuf.Timestamp
-	4, // 2: community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8001.eamvt8021:type_name -> google.protobuf.Duration
-	5, // 3: community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8001.eamvt8022:type_name -> google.protobuf.Empty
-	6, // 4: community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8001.eamvt8023:type_name -> google.protobuf.Struct
-	7, // 5: community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8001.eamvt8024:type_name -> google.protobuf.Any
-	8, // 6: community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8001.eamvt8025:type_name -> google.protobuf.FieldMask
-	9, // 7: community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8001.eamvt8030:type_name -> google.protobuf.ListValue
-	0, // 8: community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8001.eamvt8031:type_name -> community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8002
-	9, // [9:9] is the sub-list for method output_type
-	9, // [9:9] is the sub-list for method input_type
-	9, // [9:9] is the sub-list for extension type_name
-	9, // [9:9] is the sub-list for extension extendee
-	0, // [0:9] is the sub-list for field type_name
+	2,  // 0: community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8001.eamvt8010:type_name -> community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8003
+	4,  // 1: community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8001.eamvt8020:type_name -> google.protobuf.Timestamp
+	5,  // 2: community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8001.eamvt8021:type_name -> google.protobuf.Duration
+	6,  // 3: community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8001.eamvt8022:type_name -> google.protobuf.Empty
+	7,  // 4: community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8001.eamvt8023:type_name -> google.protobuf.Struct
+	8,  // 5: community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8001.eamvt8024:type_name -> google.protobuf.Any
+	9,  // 6: community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8001.eamvt8025:type_name -> google.protobuf.FieldMask
+	10, // 7: community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8001.eamvt8030:type_name -> google.protobuf.ListValue
+	0,  // 8: community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8001.eamvt8031:type_name -> community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8002
+	9,  // [9:9] is the sub-list for method output_type
+	9,  // [9:9] is the sub-list for method input_type
+	9,  // [9:9] is the sub-list for extension type_name
+	9,  // [9:9] is the sub-list for extension extendee
+	0,  // [0:9] is the sub-list for field type_name
 }
 
 func init() { file_community_apps_gramx_fifty_zero_ethos_mesh_demo_entities_proto_init() }
@@ -459,7 +524,7 @@ func file_community_apps_gramx_fifty_zero_ethos_mesh_demo_entities_proto_init() 
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: unsafe.Slice(unsafe.StringData(file_community_apps_gramx_fifty_zero_ethos_mesh_demo_entities_proto_rawDesc), len(file_community_apps_gramx_fifty_zero_ethos_mesh_demo_entities_proto_rawDesc)),
 			NumEnums:      0,
-			NumMessages:   3,
+			NumMessages:   4,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
