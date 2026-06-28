@@ -25,9 +25,9 @@ var File_community_apps_gramx_fifty_zero_epn_epn_agent_chat_EAMV6002_service_pro
 
 const file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_EAMV6002_service_proto_rawDesc = "" +
 	"\n" +
-	"Icommunity/apps/gramx/fifty/zero/epn/epn_agent_chat/EAMV6002_service.proto\x122community.apps.gramx.fifty.zero.epn.epn_agent_chat\x1aAcommunity/apps/gramx/fifty/zero/epn/epn_agent_chat/entities.proto2\xa4\x01\n" +
-	"\x17EAMV6002DiscoverService\x12\x88\x01\n" +
-	"\bEAMC6002\x12<.community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6001\x1a<.community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV60020\x01BlZjgithub.com/50gramx/eapp-golang-domain/community/apps/gramx/fifty/zero/epn/epn_agent_chat/services;servicesb\x06proto3"
+	"Icommunity/apps/gramx/fifty/zero/epn/epn_agent_chat/EAMV6002_service.proto\x122community.apps.gramx.fifty.zero.epn.epn_agent_chat\x1aAcommunity/apps/gramx/fifty/zero/epn/epn_agent_chat/entities.proto2\xa2\x01\n" +
+	"\x17EAMV6002DiscoverService\x12\x86\x01\n" +
+	"\bEAMC6002\x12<.community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6001\x1a<.community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002BlZjgithub.com/50gramx/eapp-golang-domain/community/apps/gramx/fifty/zero/epn/epn_agent_chat/services;servicesb\x06proto3"
 
 var file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_EAMV6002_service_proto_goTypes = []any{
 	(*entities.EAMV6001)(nil), // 0: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6001
