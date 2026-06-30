@@ -94,6 +94,11 @@ type EAMV6002 struct {
 	Eamvt6014     *structpb.ListValue    `protobuf:"bytes,8,opt,name=eamvt6014,proto3" json:"eamvt6014,omitempty"`
 	Eamvt6015     *structpb.ListValue    `protobuf:"bytes,9,opt,name=eamvt6015,proto3" json:"eamvt6015,omitempty"`
 	Eamvt6016     string                 `protobuf:"bytes,10,opt,name=eamvt6016,proto3" json:"eamvt6016,omitempty"`
+	Eamvt6017     string                 `protobuf:"bytes,11,opt,name=eamvt6017,proto3" json:"eamvt6017,omitempty"`
+	Eamvt6018     string                 `protobuf:"bytes,12,opt,name=eamvt6018,proto3" json:"eamvt6018,omitempty"`
+	Eamvt6019     string                 `protobuf:"bytes,13,opt,name=eamvt6019,proto3" json:"eamvt6019,omitempty"`
+	Eamvt6020     string                 `protobuf:"bytes,14,opt,name=eamvt6020,proto3" json:"eamvt6020,omitempty"`
+	Eamvt6021     string                 `protobuf:"bytes,15,opt,name=eamvt6021,proto3" json:"eamvt6021,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -198,6 +203,41 @@ func (x *EAMV6002) GetEamvt6016() string {
 	return ""
 }
 
+func (x *EAMV6002) GetEamvt6017() string {
+	if x != nil {
+		return x.Eamvt6017
+	}
+	return ""
+}
+
+func (x *EAMV6002) GetEamvt6018() string {
+	if x != nil {
+		return x.Eamvt6018
+	}
+	return ""
+}
+
+func (x *EAMV6002) GetEamvt6019() string {
+	if x != nil {
+		return x.Eamvt6019
+	}
+	return ""
+}
+
+func (x *EAMV6002) GetEamvt6020() string {
+	if x != nil {
+		return x.Eamvt6020
+	}
+	return ""
+}
+
+func (x *EAMV6002) GetEamvt6021() string {
+	if x != nil {
+		return x.Eamvt6021
+	}
+	return ""
+}
+
 var File_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto protoreflect.FileDescriptor
 
 const file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_rawDesc = "" +
@@ -206,7 +246,7 @@ const file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_raw
 	"\bEAMV6001\x12\x1c\n" +
 	"\teamvt6001\x18\x01 \x01(\tR\teamvt6001\x12\x1c\n" +
 	"\teamvt6002\x18\x02 \x01(\tR\teamvt6002\x12\x1c\n" +
-	"\teamvt6003\x18\x03 \x01(\tR\teamvt6003\"\x8a\x03\n" +
+	"\teamvt6003\x18\x03 \x01(\tR\teamvt6003\"\xa0\x04\n" +
 	"\bEAMV6002\x12\x1c\n" +
 	"\teamvt6004\x18\x01 \x01(\tR\teamvt6004\x12\x1c\n" +
 	"\teamvt6008\x18\x02 \x01(\tR\teamvt6008\x12\x1c\n" +
@@ -218,7 +258,12 @@ const file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_raw
 	"\teamvt6014\x18\b \x01(\v2\x1a.google.protobuf.ListValueR\teamvt6014\x128\n" +
 	"\teamvt6015\x18\t \x01(\v2\x1a.google.protobuf.ListValueR\teamvt6015\x12\x1c\n" +
 	"\teamvt6016\x18\n" +
-	" \x01(\tR\teamvt6016BlZjgithub.com/50gramx/eapp-golang-domain/community/apps/gramx/fifty/zero/epn/epn_agent_chat/entities;entitiesb\x06proto3"
+	" \x01(\tR\teamvt6016\x12\x1c\n" +
+	"\teamvt6017\x18\v \x01(\tR\teamvt6017\x12\x1c\n" +
+	"\teamvt6018\x18\f \x01(\tR\teamvt6018\x12\x1c\n" +
+	"\teamvt6019\x18\r \x01(\tR\teamvt6019\x12\x1c\n" +
+	"\teamvt6020\x18\x0e \x01(\tR\teamvt6020\x12\x1c\n" +
+	"\teamvt6021\x18\x0f \x01(\tR\teamvt6021BlZjgithub.com/50gramx/eapp-golang-domain/community/apps/gramx/fifty/zero/epn/epn_agent_chat/entities;entitiesb\x06proto3"
 
 var (
 	file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_rawDescOnce sync.Once
