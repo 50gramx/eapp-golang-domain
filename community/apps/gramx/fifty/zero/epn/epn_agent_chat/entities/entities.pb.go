@@ -99,6 +99,7 @@ type EAMV6002 struct {
 	Eamvt6019     string                 `protobuf:"bytes,13,opt,name=eamvt6019,proto3" json:"eamvt6019,omitempty"`
 	Eamvt6020     string                 `protobuf:"bytes,14,opt,name=eamvt6020,proto3" json:"eamvt6020,omitempty"`
 	Eamvt6021     string                 `protobuf:"bytes,15,opt,name=eamvt6021,proto3" json:"eamvt6021,omitempty"`
+	Eamvt6022     *structpb.ListValue    `protobuf:"bytes,16,opt,name=eamvt6022,proto3" json:"eamvt6022,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -238,6 +239,13 @@ func (x *EAMV6002) GetEamvt6021() string {
 	return ""
 }
 
+func (x *EAMV6002) GetEamvt6022() *structpb.ListValue {
+	if x != nil {
+		return x.Eamvt6022
+	}
+	return nil
+}
+
 var File_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto protoreflect.FileDescriptor
 
 const file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_rawDesc = "" +
@@ -246,7 +254,7 @@ const file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_raw
 	"\bEAMV6001\x12\x1c\n" +
 	"\teamvt6001\x18\x01 \x01(\tR\teamvt6001\x12\x1c\n" +
 	"\teamvt6002\x18\x02 \x01(\tR\teamvt6002\x12\x1c\n" +
-	"\teamvt6003\x18\x03 \x01(\tR\teamvt6003\"\xa0\x04\n" +
+	"\teamvt6003\x18\x03 \x01(\tR\teamvt6003\"\xda\x04\n" +
 	"\bEAMV6002\x12\x1c\n" +
 	"\teamvt6004\x18\x01 \x01(\tR\teamvt6004\x12\x1c\n" +
 	"\teamvt6008\x18\x02 \x01(\tR\teamvt6008\x12\x1c\n" +
@@ -263,7 +271,8 @@ const file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_raw
 	"\teamvt6018\x18\f \x01(\tR\teamvt6018\x12\x1c\n" +
 	"\teamvt6019\x18\r \x01(\tR\teamvt6019\x12\x1c\n" +
 	"\teamvt6020\x18\x0e \x01(\tR\teamvt6020\x12\x1c\n" +
-	"\teamvt6021\x18\x0f \x01(\tR\teamvt6021BlZjgithub.com/50gramx/eapp-golang-domain/community/apps/gramx/fifty/zero/epn/epn_agent_chat/entities;entitiesb\x06proto3"
+	"\teamvt6021\x18\x0f \x01(\tR\teamvt6021\x128\n" +
+	"\teamvt6022\x18\x10 \x01(\v2\x1a.google.protobuf.ListValueR\teamvt6022BlZjgithub.com/50gramx/eapp-golang-domain/community/apps/gramx/fifty/zero/epn/epn_agent_chat/entities;entitiesb\x06proto3"
 
 var (
 	file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_rawDescOnce sync.Once
@@ -287,11 +296,12 @@ var file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_depId
 	2, // 0: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002.eamvt6013:type_name -> google.protobuf.ListValue
 	2, // 1: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002.eamvt6014:type_name -> google.protobuf.ListValue
 	2, // 2: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002.eamvt6015:type_name -> google.protobuf.ListValue
-	3, // [3:3] is the sub-list for method output_type
-	3, // [3:3] is the sub-list for method input_type
-	3, // [3:3] is the sub-list for extension type_name
-	3, // [3:3] is the sub-list for extension extendee
-	0, // [0:3] is the sub-list for field type_name
+	2, // 3: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002.eamvt6022:type_name -> google.protobuf.ListValue
+	4, // [4:4] is the sub-list for method output_type
+	4, // [4:4] is the sub-list for method input_type
+	4, // [4:4] is the sub-list for extension type_name
+	4, // [4:4] is the sub-list for extension extendee
+	0, // [0:4] is the sub-list for field type_name
 }
 
 func init() { file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_init() }
