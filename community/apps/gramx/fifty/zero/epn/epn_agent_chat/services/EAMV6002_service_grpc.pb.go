@@ -21,6 +21,7 @@ const _ = grpc.SupportPackageIsVersion9
 
 const (
 	EAMV6002DiscoverService_EAMC6002_FullMethodName = "/community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002DiscoverService/EAMC6002"
+	EAMV6002DiscoverService_EAMC6003_FullMethodName = "/community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002DiscoverService/EAMC6003"
 )
 
 // EAMV6002DiscoverServiceClient is the client API for EAMV6002DiscoverService service.
@@ -28,6 +29,7 @@ const (
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type EAMV6002DiscoverServiceClient interface {
 	EAMC6002(ctx context.Context, in *entities.EAMV6001, opts ...grpc.CallOption) (*entities.EAMV6002, error)
+	EAMC6003(ctx context.Context, in *entities.EAMV6001, opts ...grpc.CallOption) (grpc.ServerStreamingClient[entities.EAMV6002], error)
 }
 
 type eAMV6002DiscoverServiceClient struct {
@@ -48,11 +50,31 @@ func (c *eAMV6002DiscoverServiceClient) EAMC6002(ctx context.Context, in *entiti
 	return out, nil
 }
 
+func (c *eAMV6002DiscoverServiceClient) EAMC6003(ctx context.Context, in *entities.EAMV6001, opts ...grpc.CallOption) (grpc.ServerStreamingClient[entities.EAMV6002], error) {
+	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
+	stream, err := c.cc.NewStream(ctx, &EAMV6002DiscoverService_ServiceDesc.Streams[0], EAMV6002DiscoverService_EAMC6003_FullMethodName, cOpts...)
+	if err != nil {
+		return nil, err
+	}
+	x := &grpc.GenericClientStream[entities.EAMV6001, entities.EAMV6002]{ClientStream: stream}
+	if err := x.ClientStream.SendMsg(in); err != nil {
+		return nil, err
+	}
+	if err := x.ClientStream.CloseSend(); err != nil {
+		return nil, err
+	}
+	return x, nil
+}
+
+// This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
+type EAMV6002DiscoverService_EAMC6003Client = grpc.ServerStreamingClient[entities.EAMV6002]
+
 // EAMV6002DiscoverServiceServer is the server API for EAMV6002DiscoverService service.
 // All implementations must embed UnimplementedEAMV6002DiscoverServiceServer
 // for forward compatibility.
 type EAMV6002DiscoverServiceServer interface {
 	EAMC6002(context.Context, *entities.EAMV6001) (*entities.EAMV6002, error)
+	EAMC6003(*entities.EAMV6001, grpc.ServerStreamingServer[entities.EAMV6002]) error
 	mustEmbedUnimplementedEAMV6002DiscoverServiceServer()
 }
 
@@ -65,6 +87,9 @@ type UnimplementedEAMV6002DiscoverServiceServer struct{}
 
 func (UnimplementedEAMV6002DiscoverServiceServer) EAMC6002(context.Context, *entities.EAMV6001) (*entities.EAMV6002, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method EAMC6002 not implemented")
+}
+func (UnimplementedEAMV6002DiscoverServiceServer) EAMC6003(*entities.EAMV6001, grpc.ServerStreamingServer[entities.EAMV6002]) error {
+	return status.Errorf(codes.Unimplemented, "method EAMC6003 not implemented")
 }
 func (UnimplementedEAMV6002DiscoverServiceServer) mustEmbedUnimplementedEAMV6002DiscoverServiceServer() {
 }
@@ -106,6 +131,17 @@ func _EAMV6002DiscoverService_EAMC6002_Handler(srv interface{}, ctx context.Cont
 	return interceptor(ctx, in, info, handler)
 }
 
+func _EAMV6002DiscoverService_EAMC6003_Handler(srv interface{}, stream grpc.ServerStream) error {
+	m := new(entities.EAMV6001)
+	if err := stream.RecvMsg(m); err != nil {
+		return err
+	}
+	return srv.(EAMV6002DiscoverServiceServer).EAMC6003(m, &grpc.GenericServerStream[entities.EAMV6001, entities.EAMV6002]{ServerStream: stream})
+}
+
+// This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
+type EAMV6002DiscoverService_EAMC6003Server = grpc.ServerStreamingServer[entities.EAMV6002]
+
 // EAMV6002DiscoverService_ServiceDesc is the grpc.ServiceDesc for EAMV6002DiscoverService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -118,6 +154,12 @@ var EAMV6002DiscoverService_ServiceDesc = grpc.ServiceDesc{
 			Handler:    _EAMV6002DiscoverService_EAMC6002_Handler,
 		},
 	},
-	Streams:  []grpc.StreamDesc{},
+	Streams: []grpc.StreamDesc{
+		{
+			StreamName:    "EAMC6003",
+			Handler:       _EAMV6002DiscoverService_EAMC6003_Handler,
+			ServerStreams: true,
+		},
+	},
 	Metadata: "community/apps/gramx/fifty/zero/epn/epn_agent_chat/EAMV6002_service.proto",
 }

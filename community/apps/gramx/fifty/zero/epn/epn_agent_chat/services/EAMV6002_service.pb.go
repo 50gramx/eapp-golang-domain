@@ -25,9 +25,10 @@ var File_community_apps_gramx_fifty_zero_epn_epn_agent_chat_EAMV6002_service_pro
 
 const file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_EAMV6002_service_proto_rawDesc = "" +
 	"\n" +
-	"Icommunity/apps/gramx/fifty/zero/epn/epn_agent_chat/EAMV6002_service.proto\x122community.apps.gramx.fifty.zero.epn.epn_agent_chat\x1aAcommunity/apps/gramx/fifty/zero/epn/epn_agent_chat/entities.proto2\xa2\x01\n" +
+	"Icommunity/apps/gramx/fifty/zero/epn/epn_agent_chat/EAMV6002_service.proto\x122community.apps.gramx.fifty.zero.epn.epn_agent_chat\x1aAcommunity/apps/gramx/fifty/zero/epn/epn_agent_chat/entities.proto2\xad\x02\n" +
 	"\x17EAMV6002DiscoverService\x12\x86\x01\n" +
-	"\bEAMC6002\x12<.community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6001\x1a<.community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002BlZjgithub.com/50gramx/eapp-golang-domain/community/apps/gramx/fifty/zero/epn/epn_agent_chat/services;servicesb\x06proto3"
+	"\bEAMC6002\x12<.community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6001\x1a<.community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002\x12\x88\x01\n" +
+	"\bEAMC6003\x12<.community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6001\x1a<.community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV60020\x01BlZjgithub.com/50gramx/eapp-golang-domain/community/apps/gramx/fifty/zero/epn/epn_agent_chat/services;servicesb\x06proto3"
 
 var file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_EAMV6002_service_proto_goTypes = []any{
 	(*entities.EAMV6001)(nil), // 0: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6001
@@ -35,9 +36,11 @@ var file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_EAMV6002_service_pro
 }
 var file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_EAMV6002_service_proto_depIdxs = []int32{
 	0, // 0: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002DiscoverService.EAMC6002:input_type -> community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6001
-	1, // 1: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002DiscoverService.EAMC6002:output_type -> community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002
-	1, // [1:2] is the sub-list for method output_type
-	0, // [0:1] is the sub-list for method input_type
+	0, // 1: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002DiscoverService.EAMC6003:input_type -> community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6001
+	1, // 2: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002DiscoverService.EAMC6002:output_type -> community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002
+	1, // 3: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002DiscoverService.EAMC6003:output_type -> community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002
+	2, // [2:4] is the sub-list for method output_type
+	0, // [0:2] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
 	0, // [0:0] is the sub-list for extension extendee
 	0, // [0:0] is the sub-list for field type_name
