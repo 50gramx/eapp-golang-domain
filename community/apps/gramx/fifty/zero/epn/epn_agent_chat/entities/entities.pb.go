@@ -382,6 +382,294 @@ func (x *EAMV6008) GetEamvt6035() string {
 	return ""
 }
 
+type EAMV6009 struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Eamvt6036     string                 `protobuf:"bytes,1,opt,name=eamvt6036,proto3" json:"eamvt6036,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *EAMV6009) Reset() {
+	*x = EAMV6009{}
+	mi := &file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_msgTypes[4]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *EAMV6009) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*EAMV6009) ProtoMessage() {}
+
+func (x *EAMV6009) ProtoReflect() protoreflect.Message {
+	mi := &file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_msgTypes[4]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use EAMV6009.ProtoReflect.Descriptor instead.
+func (*EAMV6009) Descriptor() ([]byte, []int) {
+	return file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_rawDescGZIP(), []int{4}
+}
+
+func (x *EAMV6009) GetEamvt6036() string {
+	if x != nil {
+		return x.Eamvt6036
+	}
+	return ""
+}
+
+type EAMV6010 struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Eamvt6037     *structpb.ListValue    `protobuf:"bytes,1,opt,name=eamvt6037,proto3" json:"eamvt6037,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *EAMV6010) Reset() {
+	*x = EAMV6010{}
+	mi := &file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_msgTypes[5]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *EAMV6010) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*EAMV6010) ProtoMessage() {}
+
+func (x *EAMV6010) ProtoReflect() protoreflect.Message {
+	mi := &file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_msgTypes[5]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use EAMV6010.ProtoReflect.Descriptor instead.
+func (*EAMV6010) Descriptor() ([]byte, []int) {
+	return file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_rawDescGZIP(), []int{5}
+}
+
+func (x *EAMV6010) GetEamvt6037() *structpb.ListValue {
+	if x != nil {
+		return x.Eamvt6037
+	}
+	return nil
+}
+
+type EAMV6011 struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Eamvt6038     string                 `protobuf:"bytes,1,opt,name=eamvt6038,proto3" json:"eamvt6038,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *EAMV6011) Reset() {
+	*x = EAMV6011{}
+	mi := &file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_msgTypes[6]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *EAMV6011) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*EAMV6011) ProtoMessage() {}
+
+func (x *EAMV6011) ProtoReflect() protoreflect.Message {
+	mi := &file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_msgTypes[6]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use EAMV6011.ProtoReflect.Descriptor instead.
+func (*EAMV6011) Descriptor() ([]byte, []int) {
+	return file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_rawDescGZIP(), []int{6}
+}
+
+func (x *EAMV6011) GetEamvt6038() string {
+	if x != nil {
+		return x.Eamvt6038
+	}
+	return ""
+}
+
+type EAMV6012 struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Eamvt6039     string                 `protobuf:"bytes,1,opt,name=eamvt6039,proto3" json:"eamvt6039,omitempty"`
+	Eamvt6040     *structpb.ListValue    `protobuf:"bytes,2,opt,name=eamvt6040,proto3" json:"eamvt6040,omitempty"`
+	Eamvt6041     string                 `protobuf:"bytes,3,opt,name=eamvt6041,proto3" json:"eamvt6041,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *EAMV6012) Reset() {
+	*x = EAMV6012{}
+	mi := &file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_msgTypes[7]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *EAMV6012) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*EAMV6012) ProtoMessage() {}
+
+func (x *EAMV6012) ProtoReflect() protoreflect.Message {
+	mi := &file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_msgTypes[7]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use EAMV6012.ProtoReflect.Descriptor instead.
+func (*EAMV6012) Descriptor() ([]byte, []int) {
+	return file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_rawDescGZIP(), []int{7}
+}
+
+func (x *EAMV6012) GetEamvt6039() string {
+	if x != nil {
+		return x.Eamvt6039
+	}
+	return ""
+}
+
+func (x *EAMV6012) GetEamvt6040() *structpb.ListValue {
+	if x != nil {
+		return x.Eamvt6040
+	}
+	return nil
+}
+
+func (x *EAMV6012) GetEamvt6041() string {
+	if x != nil {
+		return x.Eamvt6041
+	}
+	return ""
+}
+
+type EAMV6013 struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Eamvt6042     string                 `protobuf:"bytes,1,opt,name=eamvt6042,proto3" json:"eamvt6042,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *EAMV6013) Reset() {
+	*x = EAMV6013{}
+	mi := &file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_msgTypes[8]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *EAMV6013) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*EAMV6013) ProtoMessage() {}
+
+func (x *EAMV6013) ProtoReflect() protoreflect.Message {
+	mi := &file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_msgTypes[8]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use EAMV6013.ProtoReflect.Descriptor instead.
+func (*EAMV6013) Descriptor() ([]byte, []int) {
+	return file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_rawDescGZIP(), []int{8}
+}
+
+func (x *EAMV6013) GetEamvt6042() string {
+	if x != nil {
+		return x.Eamvt6042
+	}
+	return ""
+}
+
+type EAMV6014 struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Eamvt6043     *structpb.ListValue    `protobuf:"bytes,1,opt,name=eamvt6043,proto3" json:"eamvt6043,omitempty"`
+	Eamvt6044     string                 `protobuf:"bytes,2,opt,name=eamvt6044,proto3" json:"eamvt6044,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *EAMV6014) Reset() {
+	*x = EAMV6014{}
+	mi := &file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_msgTypes[9]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *EAMV6014) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*EAMV6014) ProtoMessage() {}
+
+func (x *EAMV6014) ProtoReflect() protoreflect.Message {
+	mi := &file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_msgTypes[9]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use EAMV6014.ProtoReflect.Descriptor instead.
+func (*EAMV6014) Descriptor() ([]byte, []int) {
+	return file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_rawDescGZIP(), []int{9}
+}
+
+func (x *EAMV6014) GetEamvt6043() *structpb.ListValue {
+	if x != nil {
+		return x.Eamvt6043
+	}
+	return nil
+}
+
+func (x *EAMV6014) GetEamvt6044() string {
+	if x != nil {
+		return x.Eamvt6044
+	}
+	return ""
+}
+
 var File_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto protoreflect.FileDescriptor
 
 const file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_rawDesc = "" +
@@ -418,7 +706,22 @@ const file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_raw
 	"\teamvt6032\x18\x02 \x01(\tR\teamvt6032\x128\n" +
 	"\teamvt6033\x18\x03 \x01(\v2\x1a.google.protobuf.ListValueR\teamvt6033\x12\x1c\n" +
 	"\teamvt6034\x18\x04 \x01(\bR\teamvt6034\x12\x1c\n" +
-	"\teamvt6035\x18\x05 \x01(\tR\teamvt6035BlZjgithub.com/50gramx/eapp-golang-domain/community/apps/gramx/fifty/zero/epn/epn_agent_chat/entities;entitiesb\x06proto3"
+	"\teamvt6035\x18\x05 \x01(\tR\teamvt6035\"(\n" +
+	"\bEAMV6009\x12\x1c\n" +
+	"\teamvt6036\x18\x01 \x01(\tR\teamvt6036\"D\n" +
+	"\bEAMV6010\x128\n" +
+	"\teamvt6037\x18\x01 \x01(\v2\x1a.google.protobuf.ListValueR\teamvt6037\"(\n" +
+	"\bEAMV6011\x12\x1c\n" +
+	"\teamvt6038\x18\x01 \x01(\tR\teamvt6038\"\x80\x01\n" +
+	"\bEAMV6012\x12\x1c\n" +
+	"\teamvt6039\x18\x01 \x01(\tR\teamvt6039\x128\n" +
+	"\teamvt6040\x18\x02 \x01(\v2\x1a.google.protobuf.ListValueR\teamvt6040\x12\x1c\n" +
+	"\teamvt6041\x18\x03 \x01(\tR\teamvt6041\"(\n" +
+	"\bEAMV6013\x12\x1c\n" +
+	"\teamvt6042\x18\x01 \x01(\tR\teamvt6042\"b\n" +
+	"\bEAMV6014\x128\n" +
+	"\teamvt6043\x18\x01 \x01(\v2\x1a.google.protobuf.ListValueR\teamvt6043\x12\x1c\n" +
+	"\teamvt6044\x18\x02 \x01(\tR\teamvt6044BlZjgithub.com/50gramx/eapp-golang-domain/community/apps/gramx/fifty/zero/epn/epn_agent_chat/entities;entitiesb\x06proto3"
 
 var (
 	file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_rawDescOnce sync.Once
@@ -432,26 +735,35 @@ func file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_rawD
 	return file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_rawDescData
 }
 
-var file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
+var file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_msgTypes = make([]protoimpl.MessageInfo, 10)
 var file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_goTypes = []any{
 	(*EAMV6001)(nil),           // 0: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6001
 	(*EAMV6002)(nil),           // 1: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002
 	(*EAMV6007)(nil),           // 2: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6007
 	(*EAMV6008)(nil),           // 3: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6008
-	(*structpb.ListValue)(nil), // 4: google.protobuf.ListValue
+	(*EAMV6009)(nil),           // 4: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6009
+	(*EAMV6010)(nil),           // 5: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6010
+	(*EAMV6011)(nil),           // 6: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6011
+	(*EAMV6012)(nil),           // 7: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6012
+	(*EAMV6013)(nil),           // 8: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6013
+	(*EAMV6014)(nil),           // 9: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6014
+	(*structpb.ListValue)(nil), // 10: google.protobuf.ListValue
 }
 var file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_depIdxs = []int32{
-	4, // 0: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002.eamvt6013:type_name -> google.protobuf.ListValue
-	4, // 1: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002.eamvt6014:type_name -> google.protobuf.ListValue
-	4, // 2: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002.eamvt6015:type_name -> google.protobuf.ListValue
-	4, // 3: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002.eamvt6022:type_name -> google.protobuf.ListValue
-	4, // 4: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002.eamvt6023:type_name -> google.protobuf.ListValue
-	4, // 5: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6008.eamvt6033:type_name -> google.protobuf.ListValue
-	6, // [6:6] is the sub-list for method output_type
-	6, // [6:6] is the sub-list for method input_type
-	6, // [6:6] is the sub-list for extension type_name
-	6, // [6:6] is the sub-list for extension extendee
-	0, // [0:6] is the sub-list for field type_name
+	10, // 0: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002.eamvt6013:type_name -> google.protobuf.ListValue
+	10, // 1: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002.eamvt6014:type_name -> google.protobuf.ListValue
+	10, // 2: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002.eamvt6015:type_name -> google.protobuf.ListValue
+	10, // 3: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002.eamvt6022:type_name -> google.protobuf.ListValue
+	10, // 4: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002.eamvt6023:type_name -> google.protobuf.ListValue
+	10, // 5: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6008.eamvt6033:type_name -> google.protobuf.ListValue
+	10, // 6: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6010.eamvt6037:type_name -> google.protobuf.ListValue
+	10, // 7: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6012.eamvt6040:type_name -> google.protobuf.ListValue
+	10, // 8: community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6014.eamvt6043:type_name -> google.protobuf.ListValue
+	9,  // [9:9] is the sub-list for method output_type
+	9,  // [9:9] is the sub-list for method input_type
+	9,  // [9:9] is the sub-list for extension type_name
+	9,  // [9:9] is the sub-list for extension extendee
+	0,  // [0:9] is the sub-list for field type_name
 }
 
 func init() { file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_init() }
@@ -465,7 +777,7 @@ func file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_init
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: unsafe.Slice(unsafe.StringData(file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_rawDesc), len(file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_rawDesc)),
 			NumEnums:      0,
-			NumMessages:   4,
+			NumMessages:   10,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
