@@ -9,6 +9,7 @@ package entities
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
+	structpb "google.golang.org/protobuf/types/known/structpb"
 	timestamppb "google.golang.org/protobuf/types/known/timestamppb"
 	reflect "reflect"
 	sync "sync"
@@ -486,11 +487,211 @@ func (x *EAMV7107) GetEamvt7121() string {
 	return ""
 }
 
+type EAMV7108 struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Eamvt7122     string                 `protobuf:"bytes,1,opt,name=eamvt7122,proto3" json:"eamvt7122,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *EAMV7108) Reset() {
+	*x = EAMV7108{}
+	mi := &file_community_apps_gramx_fifty_zero_epn_epn_peers_entities_proto_msgTypes[8]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *EAMV7108) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*EAMV7108) ProtoMessage() {}
+
+func (x *EAMV7108) ProtoReflect() protoreflect.Message {
+	mi := &file_community_apps_gramx_fifty_zero_epn_epn_peers_entities_proto_msgTypes[8]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use EAMV7108.ProtoReflect.Descriptor instead.
+func (*EAMV7108) Descriptor() ([]byte, []int) {
+	return file_community_apps_gramx_fifty_zero_epn_epn_peers_entities_proto_rawDescGZIP(), []int{8}
+}
+
+func (x *EAMV7108) GetEamvt7122() string {
+	if x != nil {
+		return x.Eamvt7122
+	}
+	return ""
+}
+
+type EAMV7109 struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Eamvt7123     *structpb.ListValue    `protobuf:"bytes,1,opt,name=eamvt7123,proto3" json:"eamvt7123,omitempty"`
+	Eamvt7124     string                 `protobuf:"bytes,2,opt,name=eamvt7124,proto3" json:"eamvt7124,omitempty"`
+	Eamvt7125     *structpb.ListValue    `protobuf:"bytes,3,opt,name=eamvt7125,proto3" json:"eamvt7125,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *EAMV7109) Reset() {
+	*x = EAMV7109{}
+	mi := &file_community_apps_gramx_fifty_zero_epn_epn_peers_entities_proto_msgTypes[9]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *EAMV7109) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*EAMV7109) ProtoMessage() {}
+
+func (x *EAMV7109) ProtoReflect() protoreflect.Message {
+	mi := &file_community_apps_gramx_fifty_zero_epn_epn_peers_entities_proto_msgTypes[9]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use EAMV7109.ProtoReflect.Descriptor instead.
+func (*EAMV7109) Descriptor() ([]byte, []int) {
+	return file_community_apps_gramx_fifty_zero_epn_epn_peers_entities_proto_rawDescGZIP(), []int{9}
+}
+
+func (x *EAMV7109) GetEamvt7123() *structpb.ListValue {
+	if x != nil {
+		return x.Eamvt7123
+	}
+	return nil
+}
+
+func (x *EAMV7109) GetEamvt7124() string {
+	if x != nil {
+		return x.Eamvt7124
+	}
+	return ""
+}
+
+func (x *EAMV7109) GetEamvt7125() *structpb.ListValue {
+	if x != nil {
+		return x.Eamvt7125
+	}
+	return nil
+}
+
+type EAMV7110 struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Eamvt7126     string                 `protobuf:"bytes,1,opt,name=eamvt7126,proto3" json:"eamvt7126,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *EAMV7110) Reset() {
+	*x = EAMV7110{}
+	mi := &file_community_apps_gramx_fifty_zero_epn_epn_peers_entities_proto_msgTypes[10]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *EAMV7110) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*EAMV7110) ProtoMessage() {}
+
+func (x *EAMV7110) ProtoReflect() protoreflect.Message {
+	mi := &file_community_apps_gramx_fifty_zero_epn_epn_peers_entities_proto_msgTypes[10]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use EAMV7110.ProtoReflect.Descriptor instead.
+func (*EAMV7110) Descriptor() ([]byte, []int) {
+	return file_community_apps_gramx_fifty_zero_epn_epn_peers_entities_proto_rawDescGZIP(), []int{10}
+}
+
+func (x *EAMV7110) GetEamvt7126() string {
+	if x != nil {
+		return x.Eamvt7126
+	}
+	return ""
+}
+
+type EAMV7111 struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Eamvt7127     *structpb.ListValue    `protobuf:"bytes,1,opt,name=eamvt7127,proto3" json:"eamvt7127,omitempty"`
+	Eamvt7128     string                 `protobuf:"bytes,2,opt,name=eamvt7128,proto3" json:"eamvt7128,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *EAMV7111) Reset() {
+	*x = EAMV7111{}
+	mi := &file_community_apps_gramx_fifty_zero_epn_epn_peers_entities_proto_msgTypes[11]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *EAMV7111) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*EAMV7111) ProtoMessage() {}
+
+func (x *EAMV7111) ProtoReflect() protoreflect.Message {
+	mi := &file_community_apps_gramx_fifty_zero_epn_epn_peers_entities_proto_msgTypes[11]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use EAMV7111.ProtoReflect.Descriptor instead.
+func (*EAMV7111) Descriptor() ([]byte, []int) {
+	return file_community_apps_gramx_fifty_zero_epn_epn_peers_entities_proto_rawDescGZIP(), []int{11}
+}
+
+func (x *EAMV7111) GetEamvt7127() *structpb.ListValue {
+	if x != nil {
+		return x.Eamvt7127
+	}
+	return nil
+}
+
+func (x *EAMV7111) GetEamvt7128() string {
+	if x != nil {
+		return x.Eamvt7128
+	}
+	return ""
+}
+
 var File_community_apps_gramx_fifty_zero_epn_epn_peers_entities_proto protoreflect.FileDescriptor
 
 const file_community_apps_gramx_fifty_zero_epn_epn_peers_entities_proto_rawDesc = "" +
 	"\n" +
-	"<community/apps/gramx/fifty/zero/epn/epn_peers/entities.proto\x12-community.apps.gramx.fifty.zero.epn.epn_peers\x1a\x1fgoogle/protobuf/timestamp.proto\"(\n" +
+	"<community/apps/gramx/fifty/zero/epn/epn_peers/entities.proto\x12-community.apps.gramx.fifty.zero.epn.epn_peers\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\x1cgoogle/protobuf/struct.proto\"(\n" +
 	"\bEAMV7100\x12\x1c\n" +
 	"\teamvt7100\x18\x01 \x01(\tR\teamvt7100\"\xa0\x01\n" +
 	"\bEAMV7101\x12\x1c\n" +
@@ -520,7 +721,18 @@ const file_community_apps_gramx_fifty_zero_epn_epn_peers_entities_proto_rawDesc 
 	"\teamvt7118\x18\x02 \x01(\tR\teamvt7118\x12\x1c\n" +
 	"\teamvt7119\x18\x03 \x01(\tR\teamvt7119\x12\x1c\n" +
 	"\teamvt7120\x18\x04 \x01(\tR\teamvt7120\x12\x1c\n" +
-	"\teamvt7121\x18\x05 \x01(\tR\teamvt7121BgZegithub.com/50gramx/eapp-golang-domain/community/apps/gramx/fifty/zero/epn/epn_peers/entities;entitiesb\x06proto3"
+	"\teamvt7121\x18\x05 \x01(\tR\teamvt7121\"(\n" +
+	"\bEAMV7108\x12\x1c\n" +
+	"\teamvt7122\x18\x01 \x01(\tR\teamvt7122\"\x9c\x01\n" +
+	"\bEAMV7109\x128\n" +
+	"\teamvt7123\x18\x01 \x01(\v2\x1a.google.protobuf.ListValueR\teamvt7123\x12\x1c\n" +
+	"\teamvt7124\x18\x02 \x01(\tR\teamvt7124\x128\n" +
+	"\teamvt7125\x18\x03 \x01(\v2\x1a.google.protobuf.ListValueR\teamvt7125\"(\n" +
+	"\bEAMV7110\x12\x1c\n" +
+	"\teamvt7126\x18\x01 \x01(\tR\teamvt7126\"b\n" +
+	"\bEAMV7111\x128\n" +
+	"\teamvt7127\x18\x01 \x01(\v2\x1a.google.protobuf.ListValueR\teamvt7127\x12\x1c\n" +
+	"\teamvt7128\x18\x02 \x01(\tR\teamvt7128BgZegithub.com/50gramx/eapp-golang-domain/community/apps/gramx/fifty/zero/epn/epn_peers/entities;entitiesb\x06proto3"
 
 var (
 	file_community_apps_gramx_fifty_zero_epn_epn_peers_entities_proto_rawDescOnce sync.Once
@@ -534,7 +746,7 @@ func file_community_apps_gramx_fifty_zero_epn_epn_peers_entities_proto_rawDescGZ
 	return file_community_apps_gramx_fifty_zero_epn_epn_peers_entities_proto_rawDescData
 }
 
-var file_community_apps_gramx_fifty_zero_epn_epn_peers_entities_proto_msgTypes = make([]protoimpl.MessageInfo, 8)
+var file_community_apps_gramx_fifty_zero_epn_epn_peers_entities_proto_msgTypes = make([]protoimpl.MessageInfo, 12)
 var file_community_apps_gramx_fifty_zero_epn_epn_peers_entities_proto_goTypes = []any{
 	(*EAMV7100)(nil),              // 0: community.apps.gramx.fifty.zero.epn.epn_peers.EAMV7100
 	(*EAMV7101)(nil),              // 1: community.apps.gramx.fifty.zero.epn.epn_peers.EAMV7101
@@ -544,16 +756,24 @@ var file_community_apps_gramx_fifty_zero_epn_epn_peers_entities_proto_goTypes = 
 	(*EAMV7105)(nil),              // 5: community.apps.gramx.fifty.zero.epn.epn_peers.EAMV7105
 	(*EAMV7106)(nil),              // 6: community.apps.gramx.fifty.zero.epn.epn_peers.EAMV7106
 	(*EAMV7107)(nil),              // 7: community.apps.gramx.fifty.zero.epn.epn_peers.EAMV7107
-	(*timestamppb.Timestamp)(nil), // 8: google.protobuf.Timestamp
+	(*EAMV7108)(nil),              // 8: community.apps.gramx.fifty.zero.epn.epn_peers.EAMV7108
+	(*EAMV7109)(nil),              // 9: community.apps.gramx.fifty.zero.epn.epn_peers.EAMV7109
+	(*EAMV7110)(nil),              // 10: community.apps.gramx.fifty.zero.epn.epn_peers.EAMV7110
+	(*EAMV7111)(nil),              // 11: community.apps.gramx.fifty.zero.epn.epn_peers.EAMV7111
+	(*timestamppb.Timestamp)(nil), // 12: google.protobuf.Timestamp
+	(*structpb.ListValue)(nil),    // 13: google.protobuf.ListValue
 }
 var file_community_apps_gramx_fifty_zero_epn_epn_peers_entities_proto_depIdxs = []int32{
-	3, // 0: community.apps.gramx.fifty.zero.epn.epn_peers.EAMV7103.eamvt7111:type_name -> community.apps.gramx.fifty.zero.epn.epn_peers.EAMV7102
-	8, // 1: community.apps.gramx.fifty.zero.epn.epn_peers.EAMV7102.eamvt7110:type_name -> google.protobuf.Timestamp
-	2, // [2:2] is the sub-list for method output_type
-	2, // [2:2] is the sub-list for method input_type
-	2, // [2:2] is the sub-list for extension type_name
-	2, // [2:2] is the sub-list for extension extendee
-	0, // [0:2] is the sub-list for field type_name
+	3,  // 0: community.apps.gramx.fifty.zero.epn.epn_peers.EAMV7103.eamvt7111:type_name -> community.apps.gramx.fifty.zero.epn.epn_peers.EAMV7102
+	12, // 1: community.apps.gramx.fifty.zero.epn.epn_peers.EAMV7102.eamvt7110:type_name -> google.protobuf.Timestamp
+	13, // 2: community.apps.gramx.fifty.zero.epn.epn_peers.EAMV7109.eamvt7123:type_name -> google.protobuf.ListValue
+	13, // 3: community.apps.gramx.fifty.zero.epn.epn_peers.EAMV7109.eamvt7125:type_name -> google.protobuf.ListValue
+	13, // 4: community.apps.gramx.fifty.zero.epn.epn_peers.EAMV7111.eamvt7127:type_name -> google.protobuf.ListValue
+	5,  // [5:5] is the sub-list for method output_type
+	5,  // [5:5] is the sub-list for method input_type
+	5,  // [5:5] is the sub-list for extension type_name
+	5,  // [5:5] is the sub-list for extension extendee
+	0,  // [0:5] is the sub-list for field type_name
 }
 
 func init() { file_community_apps_gramx_fifty_zero_epn_epn_peers_entities_proto_init() }
@@ -567,7 +787,7 @@ func file_community_apps_gramx_fifty_zero_epn_epn_peers_entities_proto_init() {
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: unsafe.Slice(unsafe.StringData(file_community_apps_gramx_fifty_zero_epn_epn_peers_entities_proto_rawDesc), len(file_community_apps_gramx_fifty_zero_epn_epn_peers_entities_proto_rawDesc)),
 			NumEnums:      0,
-			NumMessages:   8,
+			NumMessages:   12,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
