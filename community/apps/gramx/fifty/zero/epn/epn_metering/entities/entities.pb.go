@@ -70,6 +70,9 @@ type EAMV11002 struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	Eamvt11002    *structpb.ListValue    `protobuf:"bytes,1,opt,name=eamvt11002,proto3" json:"eamvt11002,omitempty"`
 	Eamvt11003    string                 `protobuf:"bytes,2,opt,name=eamvt11003,proto3" json:"eamvt11003,omitempty"`
+	Eamvt11008    *structpb.ListValue    `protobuf:"bytes,3,opt,name=eamvt11008,proto3" json:"eamvt11008,omitempty"`
+	Eamvt11009    *structpb.ListValue    `protobuf:"bytes,4,opt,name=eamvt11009,proto3" json:"eamvt11009,omitempty"`
+	Eamvt11010    *structpb.ListValue    `protobuf:"bytes,5,opt,name=eamvt11010,proto3" json:"eamvt11010,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -116,6 +119,27 @@ func (x *EAMV11002) GetEamvt11003() string {
 		return x.Eamvt11003
 	}
 	return ""
+}
+
+func (x *EAMV11002) GetEamvt11008() *structpb.ListValue {
+	if x != nil {
+		return x.Eamvt11008
+	}
+	return nil
+}
+
+func (x *EAMV11002) GetEamvt11009() *structpb.ListValue {
+	if x != nil {
+		return x.Eamvt11009
+	}
+	return nil
+}
+
+func (x *EAMV11002) GetEamvt11010() *structpb.ListValue {
+	if x != nil {
+		return x.Eamvt11010
+	}
+	return nil
 }
 
 type EAMV11003 struct {
@@ -230,14 +254,23 @@ const file_community_apps_gramx_fifty_zero_epn_epn_metering_entities_proto_rawDe
 	"\tEAMV11001\x12\x1e\n" +
 	"\n" +
 	"eamvt11001\x18\x01 \x01(\tR\n" +
-	"eamvt11001\"g\n" +
+	"eamvt11001\"\x9b\x02\n" +
 	"\tEAMV11002\x12:\n" +
 	"\n" +
 	"eamvt11002\x18\x01 \x01(\v2\x1a.google.protobuf.ListValueR\n" +
 	"eamvt11002\x12\x1e\n" +
 	"\n" +
 	"eamvt11003\x18\x02 \x01(\tR\n" +
-	"eamvt11003\"+\n" +
+	"eamvt11003\x12:\n" +
+	"\n" +
+	"eamvt11008\x18\x03 \x01(\v2\x1a.google.protobuf.ListValueR\n" +
+	"eamvt11008\x12:\n" +
+	"\n" +
+	"eamvt11009\x18\x04 \x01(\v2\x1a.google.protobuf.ListValueR\n" +
+	"eamvt11009\x12:\n" +
+	"\n" +
+	"eamvt11010\x18\x05 \x01(\v2\x1a.google.protobuf.ListValueR\n" +
+	"eamvt11010\"+\n" +
 	"\tEAMV11003\x12\x1e\n" +
 	"\n" +
 	"eamvt11004\x18\x01 \x01(\tR\n" +
@@ -275,12 +308,15 @@ var file_community_apps_gramx_fifty_zero_epn_epn_metering_entities_proto_goTypes
 }
 var file_community_apps_gramx_fifty_zero_epn_epn_metering_entities_proto_depIdxs = []int32{
 	4, // 0: community.apps.gramx.fifty.zero.epn.epn_metering.EAMV11002.eamvt11002:type_name -> google.protobuf.ListValue
-	4, // 1: community.apps.gramx.fifty.zero.epn.epn_metering.EAMV11004.eamvt11006:type_name -> google.protobuf.ListValue
-	2, // [2:2] is the sub-list for method output_type
-	2, // [2:2] is the sub-list for method input_type
-	2, // [2:2] is the sub-list for extension type_name
-	2, // [2:2] is the sub-list for extension extendee
-	0, // [0:2] is the sub-list for field type_name
+	4, // 1: community.apps.gramx.fifty.zero.epn.epn_metering.EAMV11002.eamvt11008:type_name -> google.protobuf.ListValue
+	4, // 2: community.apps.gramx.fifty.zero.epn.epn_metering.EAMV11002.eamvt11009:type_name -> google.protobuf.ListValue
+	4, // 3: community.apps.gramx.fifty.zero.epn.epn_metering.EAMV11002.eamvt11010:type_name -> google.protobuf.ListValue
+	4, // 4: community.apps.gramx.fifty.zero.epn.epn_metering.EAMV11004.eamvt11006:type_name -> google.protobuf.ListValue
+	5, // [5:5] is the sub-list for method output_type
+	5, // [5:5] is the sub-list for method input_type
+	5, // [5:5] is the sub-list for extension type_name
+	5, // [5:5] is the sub-list for extension extendee
+	0, // [0:5] is the sub-list for field type_name
 }
 
 func init() { file_community_apps_gramx_fifty_zero_epn_epn_metering_entities_proto_init() }
