@@ -306,6 +306,58 @@ func (x *EAMV15005) GetEamvt15013() string {
 	return ""
 }
 
+type EAMV15006 struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Eamvt15014    string                 `protobuf:"bytes,1,opt,name=eamvt15014,proto3" json:"eamvt15014,omitempty"`
+	Eamvt15015    string                 `protobuf:"bytes,2,opt,name=eamvt15015,proto3" json:"eamvt15015,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *EAMV15006) Reset() {
+	*x = EAMV15006{}
+	mi := &file_community_apps_gramx_fifty_zero_epn_epn_circle_entities_proto_msgTypes[5]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *EAMV15006) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*EAMV15006) ProtoMessage() {}
+
+func (x *EAMV15006) ProtoReflect() protoreflect.Message {
+	mi := &file_community_apps_gramx_fifty_zero_epn_epn_circle_entities_proto_msgTypes[5]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use EAMV15006.ProtoReflect.Descriptor instead.
+func (*EAMV15006) Descriptor() ([]byte, []int) {
+	return file_community_apps_gramx_fifty_zero_epn_epn_circle_entities_proto_rawDescGZIP(), []int{5}
+}
+
+func (x *EAMV15006) GetEamvt15014() string {
+	if x != nil {
+		return x.Eamvt15014
+	}
+	return ""
+}
+
+func (x *EAMV15006) GetEamvt15015() string {
+	if x != nil {
+		return x.Eamvt15015
+	}
+	return ""
+}
+
 var File_community_apps_gramx_fifty_zero_epn_epn_circle_entities_proto protoreflect.FileDescriptor
 
 const file_community_apps_gramx_fifty_zero_epn_epn_circle_entities_proto_rawDesc = "" +
@@ -354,7 +406,14 @@ const file_community_apps_gramx_fifty_zero_epn_epn_circle_entities_proto_rawDesc
 	"eamvt15012\x12\x1e\n" +
 	"\n" +
 	"eamvt15013\x18\x02 \x01(\tR\n" +
-	"eamvt15013BhZfgithub.com/50gramx/eapp-golang-domain/community/apps/gramx/fifty/zero/epn/epn_circle/entities;entitiesb\x06proto3"
+	"eamvt15013\"K\n" +
+	"\tEAMV15006\x12\x1e\n" +
+	"\n" +
+	"eamvt15014\x18\x01 \x01(\tR\n" +
+	"eamvt15014\x12\x1e\n" +
+	"\n" +
+	"eamvt15015\x18\x02 \x01(\tR\n" +
+	"eamvt15015BhZfgithub.com/50gramx/eapp-golang-domain/community/apps/gramx/fifty/zero/epn/epn_circle/entities;entitiesb\x06proto3"
 
 var (
 	file_community_apps_gramx_fifty_zero_epn_epn_circle_entities_proto_rawDescOnce sync.Once
@@ -368,22 +427,23 @@ func file_community_apps_gramx_fifty_zero_epn_epn_circle_entities_proto_rawDescG
 	return file_community_apps_gramx_fifty_zero_epn_epn_circle_entities_proto_rawDescData
 }
 
-var file_community_apps_gramx_fifty_zero_epn_epn_circle_entities_proto_msgTypes = make([]protoimpl.MessageInfo, 5)
+var file_community_apps_gramx_fifty_zero_epn_epn_circle_entities_proto_msgTypes = make([]protoimpl.MessageInfo, 6)
 var file_community_apps_gramx_fifty_zero_epn_epn_circle_entities_proto_goTypes = []any{
 	(*EAMV15001)(nil),          // 0: community.apps.gramx.fifty.zero.epn.epn_circle.EAMV15001
 	(*EAMV15002)(nil),          // 1: community.apps.gramx.fifty.zero.epn.epn_circle.EAMV15002
 	(*EAMV15003)(nil),          // 2: community.apps.gramx.fifty.zero.epn.epn_circle.EAMV15003
 	(*EAMV15004)(nil),          // 3: community.apps.gramx.fifty.zero.epn.epn_circle.EAMV15004
 	(*EAMV15005)(nil),          // 4: community.apps.gramx.fifty.zero.epn.epn_circle.EAMV15005
-	(*structpb.ListValue)(nil), // 5: google.protobuf.ListValue
+	(*EAMV15006)(nil),          // 5: community.apps.gramx.fifty.zero.epn.epn_circle.EAMV15006
+	(*structpb.ListValue)(nil), // 6: google.protobuf.ListValue
 }
 var file_community_apps_gramx_fifty_zero_epn_epn_circle_entities_proto_depIdxs = []int32{
-	5, // 0: community.apps.gramx.fifty.zero.epn.epn_circle.EAMV15002.eamvt15002:type_name -> google.protobuf.ListValue
-	5, // 1: community.apps.gramx.fifty.zero.epn.epn_circle.EAMV15002.eamvt15003:type_name -> google.protobuf.ListValue
-	5, // 2: community.apps.gramx.fifty.zero.epn.epn_circle.EAMV15002.eamvt15005:type_name -> google.protobuf.ListValue
-	5, // 3: community.apps.gramx.fifty.zero.epn.epn_circle.EAMV15004.eamvt15009:type_name -> google.protobuf.ListValue
-	5, // 4: community.apps.gramx.fifty.zero.epn.epn_circle.EAMV15004.eamvt15010:type_name -> google.protobuf.ListValue
-	5, // 5: community.apps.gramx.fifty.zero.epn.epn_circle.EAMV15004.eamvt15011:type_name -> google.protobuf.ListValue
+	6, // 0: community.apps.gramx.fifty.zero.epn.epn_circle.EAMV15002.eamvt15002:type_name -> google.protobuf.ListValue
+	6, // 1: community.apps.gramx.fifty.zero.epn.epn_circle.EAMV15002.eamvt15003:type_name -> google.protobuf.ListValue
+	6, // 2: community.apps.gramx.fifty.zero.epn.epn_circle.EAMV15002.eamvt15005:type_name -> google.protobuf.ListValue
+	6, // 3: community.apps.gramx.fifty.zero.epn.epn_circle.EAMV15004.eamvt15009:type_name -> google.protobuf.ListValue
+	6, // 4: community.apps.gramx.fifty.zero.epn.epn_circle.EAMV15004.eamvt15010:type_name -> google.protobuf.ListValue
+	6, // 5: community.apps.gramx.fifty.zero.epn.epn_circle.EAMV15004.eamvt15011:type_name -> google.protobuf.ListValue
 	6, // [6:6] is the sub-list for method output_type
 	6, // [6:6] is the sub-list for method input_type
 	6, // [6:6] is the sub-list for extension type_name
@@ -402,7 +462,7 @@ func file_community_apps_gramx_fifty_zero_epn_epn_circle_entities_proto_init() {
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: unsafe.Slice(unsafe.StringData(file_community_apps_gramx_fifty_zero_epn_epn_circle_entities_proto_rawDesc), len(file_community_apps_gramx_fifty_zero_epn_epn_circle_entities_proto_rawDesc)),
 			NumEnums:      0,
-			NumMessages:   5,
+			NumMessages:   6,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
