@@ -25,29 +25,36 @@ var File_community_apps_gramx_fifty_zero_epn_epn_deployments_EAMV9008_service_pr
 
 const file_community_apps_gramx_fifty_zero_epn_epn_deployments_EAMV9008_service_proto_rawDesc = "" +
 	"\n" +
-	"Jcommunity/apps/gramx/fifty/zero/epn/epn_deployments/EAMV9008_service.proto\x123community.apps.gramx.fifty.zero.epn.epn_deployments\x1aBcommunity/apps/gramx/fifty/zero/epn/epn_deployments/entities.proto2\xc5\x04\n" +
+	"Jcommunity/apps/gramx/fifty/zero/epn/epn_deployments/EAMV9008_service.proto\x123community.apps.gramx.fifty.zero.epn.epn_deployments\x1aBcommunity/apps/gramx/fifty/zero/epn/epn_deployments/entities.proto2\xdb\x06\n" +
 	"\x17EAMV9008DiscoverService\x12\x88\x01\n" +
 	"\bEAMC9004\x12=.community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9007\x1a=.community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008\x12\x88\x01\n" +
 	"\bEAMC9005\x12=.community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9009\x1a=.community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008\x12\x88\x01\n" +
 	"\bEAMC9006\x12=.community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9009\x1a=.community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008\x12\x88\x01\n" +
-	"\bEAMC9007\x12=.community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9007\x1a=.community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008BmZkgithub.com/50gramx/eapp-golang-domain/community/apps/gramx/fifty/zero/epn/epn_deployments/services;servicesb\x06proto3"
+	"\bEAMC9007\x12=.community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9007\x1a=.community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008\x12\x88\x01\n" +
+	"\bEAMC9008\x12=.community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9010\x1a=.community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008\x12\x88\x01\n" +
+	"\bEAMC9009\x12=.community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9007\x1a=.community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008BmZkgithub.com/50gramx/eapp-golang-domain/community/apps/gramx/fifty/zero/epn/epn_deployments/services;servicesb\x06proto3"
 
 var file_community_apps_gramx_fifty_zero_epn_epn_deployments_EAMV9008_service_proto_goTypes = []any{
 	(*entities.EAMV9007)(nil), // 0: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9007
 	(*entities.EAMV9009)(nil), // 1: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9009
-	(*entities.EAMV9008)(nil), // 2: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008
+	(*entities.EAMV9010)(nil), // 2: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9010
+	(*entities.EAMV9008)(nil), // 3: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008
 }
 var file_community_apps_gramx_fifty_zero_epn_epn_deployments_EAMV9008_service_proto_depIdxs = []int32{
 	0, // 0: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008DiscoverService.EAMC9004:input_type -> community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9007
 	1, // 1: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008DiscoverService.EAMC9005:input_type -> community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9009
 	1, // 2: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008DiscoverService.EAMC9006:input_type -> community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9009
 	0, // 3: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008DiscoverService.EAMC9007:input_type -> community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9007
-	2, // 4: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008DiscoverService.EAMC9004:output_type -> community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008
-	2, // 5: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008DiscoverService.EAMC9005:output_type -> community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008
-	2, // 6: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008DiscoverService.EAMC9006:output_type -> community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008
-	2, // 7: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008DiscoverService.EAMC9007:output_type -> community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008
-	4, // [4:8] is the sub-list for method output_type
-	0, // [0:4] is the sub-list for method input_type
+	2, // 4: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008DiscoverService.EAMC9008:input_type -> community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9010
+	0, // 5: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008DiscoverService.EAMC9009:input_type -> community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9007
+	3, // 6: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008DiscoverService.EAMC9004:output_type -> community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008
+	3, // 7: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008DiscoverService.EAMC9005:output_type -> community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008
+	3, // 8: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008DiscoverService.EAMC9006:output_type -> community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008
+	3, // 9: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008DiscoverService.EAMC9007:output_type -> community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008
+	3, // 10: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008DiscoverService.EAMC9008:output_type -> community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008
+	3, // 11: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008DiscoverService.EAMC9009:output_type -> community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008
+	6, // [6:12] is the sub-list for method output_type
+	0, // [0:6] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
 	0, // [0:0] is the sub-list for extension extendee
 	0, // [0:0] is the sub-list for field type_name

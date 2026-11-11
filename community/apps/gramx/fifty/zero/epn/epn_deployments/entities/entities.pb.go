@@ -586,6 +586,58 @@ func (x *EAMV9009) GetEamvt9030() string {
 	return ""
 }
 
+type EAMV9010 struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Eamvt9032     string                 `protobuf:"bytes,1,opt,name=eamvt9032,proto3" json:"eamvt9032,omitempty"`
+	Eamvt9033     string                 `protobuf:"bytes,2,opt,name=eamvt9033,proto3" json:"eamvt9033,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *EAMV9010) Reset() {
+	*x = EAMV9010{}
+	mi := &file_community_apps_gramx_fifty_zero_epn_epn_deployments_entities_proto_msgTypes[9]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *EAMV9010) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*EAMV9010) ProtoMessage() {}
+
+func (x *EAMV9010) ProtoReflect() protoreflect.Message {
+	mi := &file_community_apps_gramx_fifty_zero_epn_epn_deployments_entities_proto_msgTypes[9]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use EAMV9010.ProtoReflect.Descriptor instead.
+func (*EAMV9010) Descriptor() ([]byte, []int) {
+	return file_community_apps_gramx_fifty_zero_epn_epn_deployments_entities_proto_rawDescGZIP(), []int{9}
+}
+
+func (x *EAMV9010) GetEamvt9032() string {
+	if x != nil {
+		return x.Eamvt9032
+	}
+	return ""
+}
+
+func (x *EAMV9010) GetEamvt9033() string {
+	if x != nil {
+		return x.Eamvt9033
+	}
+	return ""
+}
+
 var File_community_apps_gramx_fifty_zero_epn_epn_deployments_entities_proto protoreflect.FileDescriptor
 
 const file_community_apps_gramx_fifty_zero_epn_epn_deployments_entities_proto_rawDesc = "" +
@@ -629,7 +681,10 @@ const file_community_apps_gramx_fifty_zero_epn_epn_deployments_entities_proto_ra
 	"\teamvt9031\x18\t \x01(\tR\teamvt9031\"F\n" +
 	"\bEAMV9009\x12\x1c\n" +
 	"\teamvt9029\x18\x01 \x01(\tR\teamvt9029\x12\x1c\n" +
-	"\teamvt9030\x18\x02 \x01(\tR\teamvt9030BmZkgithub.com/50gramx/eapp-golang-domain/community/apps/gramx/fifty/zero/epn/epn_deployments/entities;entitiesb\x06proto3"
+	"\teamvt9030\x18\x02 \x01(\tR\teamvt9030\"F\n" +
+	"\bEAMV9010\x12\x1c\n" +
+	"\teamvt9032\x18\x01 \x01(\tR\teamvt9032\x12\x1c\n" +
+	"\teamvt9033\x18\x02 \x01(\tR\teamvt9033BmZkgithub.com/50gramx/eapp-golang-domain/community/apps/gramx/fifty/zero/epn/epn_deployments/entities;entitiesb\x06proto3"
 
 var (
 	file_community_apps_gramx_fifty_zero_epn_epn_deployments_entities_proto_rawDescOnce sync.Once
@@ -643,7 +698,7 @@ func file_community_apps_gramx_fifty_zero_epn_epn_deployments_entities_proto_raw
 	return file_community_apps_gramx_fifty_zero_epn_epn_deployments_entities_proto_rawDescData
 }
 
-var file_community_apps_gramx_fifty_zero_epn_epn_deployments_entities_proto_msgTypes = make([]protoimpl.MessageInfo, 9)
+var file_community_apps_gramx_fifty_zero_epn_epn_deployments_entities_proto_msgTypes = make([]protoimpl.MessageInfo, 10)
 var file_community_apps_gramx_fifty_zero_epn_epn_deployments_entities_proto_goTypes = []any{
 	(*EAMV9001)(nil),           // 0: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9001
 	(*EAMV9002)(nil),           // 1: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9002
@@ -654,25 +709,26 @@ var file_community_apps_gramx_fifty_zero_epn_epn_deployments_entities_proto_goTy
 	(*EAMV9007)(nil),           // 6: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9007
 	(*EAMV9008)(nil),           // 7: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008
 	(*EAMV9009)(nil),           // 8: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9009
-	(*structpb.ListValue)(nil), // 9: google.protobuf.ListValue
+	(*EAMV9010)(nil),           // 9: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9010
+	(*structpb.ListValue)(nil), // 10: google.protobuf.ListValue
 }
 var file_community_apps_gramx_fifty_zero_epn_epn_deployments_entities_proto_depIdxs = []int32{
-	9,  // 0: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9002.eamvt9003:type_name -> google.protobuf.ListValue
-	9,  // 1: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9002.eamvt9004:type_name -> google.protobuf.ListValue
-	9,  // 2: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9002.eamvt9005:type_name -> google.protobuf.ListValue
-	9,  // 3: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9002.eamvt9006:type_name -> google.protobuf.ListValue
-	9,  // 4: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9002.eamvt9007:type_name -> google.protobuf.ListValue
-	9,  // 5: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9002.eamvt9008:type_name -> google.protobuf.ListValue
-	9,  // 6: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9004.eamvt9012:type_name -> google.protobuf.ListValue
-	9,  // 7: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9004.eamvt9013:type_name -> google.protobuf.ListValue
-	9,  // 8: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9004.eamvt9014:type_name -> google.protobuf.ListValue
-	9,  // 9: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9004.eamvt9015:type_name -> google.protobuf.ListValue
-	9,  // 10: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9006.eamvt9018:type_name -> google.protobuf.ListValue
-	9,  // 11: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008.eamvt9023:type_name -> google.protobuf.ListValue
-	9,  // 12: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008.eamvt9024:type_name -> google.protobuf.ListValue
-	9,  // 13: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008.eamvt9025:type_name -> google.protobuf.ListValue
-	9,  // 14: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008.eamvt9026:type_name -> google.protobuf.ListValue
-	9,  // 15: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008.eamvt9027:type_name -> google.protobuf.ListValue
+	10, // 0: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9002.eamvt9003:type_name -> google.protobuf.ListValue
+	10, // 1: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9002.eamvt9004:type_name -> google.protobuf.ListValue
+	10, // 2: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9002.eamvt9005:type_name -> google.protobuf.ListValue
+	10, // 3: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9002.eamvt9006:type_name -> google.protobuf.ListValue
+	10, // 4: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9002.eamvt9007:type_name -> google.protobuf.ListValue
+	10, // 5: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9002.eamvt9008:type_name -> google.protobuf.ListValue
+	10, // 6: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9004.eamvt9012:type_name -> google.protobuf.ListValue
+	10, // 7: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9004.eamvt9013:type_name -> google.protobuf.ListValue
+	10, // 8: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9004.eamvt9014:type_name -> google.protobuf.ListValue
+	10, // 9: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9004.eamvt9015:type_name -> google.protobuf.ListValue
+	10, // 10: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9006.eamvt9018:type_name -> google.protobuf.ListValue
+	10, // 11: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008.eamvt9023:type_name -> google.protobuf.ListValue
+	10, // 12: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008.eamvt9024:type_name -> google.protobuf.ListValue
+	10, // 13: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008.eamvt9025:type_name -> google.protobuf.ListValue
+	10, // 14: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008.eamvt9026:type_name -> google.protobuf.ListValue
+	10, // 15: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008.eamvt9027:type_name -> google.protobuf.ListValue
 	16, // [16:16] is the sub-list for method output_type
 	16, // [16:16] is the sub-list for method input_type
 	16, // [16:16] is the sub-list for extension type_name
@@ -691,7 +747,7 @@ func file_community_apps_gramx_fifty_zero_epn_epn_deployments_entities_proto_ini
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: unsafe.Slice(unsafe.StringData(file_community_apps_gramx_fifty_zero_epn_epn_deployments_entities_proto_rawDesc), len(file_community_apps_gramx_fifty_zero_epn_epn_deployments_entities_proto_rawDesc)),
 			NumEnums:      0,
-			NumMessages:   9,
+			NumMessages:   10,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
