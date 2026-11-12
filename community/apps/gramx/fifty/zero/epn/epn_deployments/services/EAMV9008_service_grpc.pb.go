@@ -26,6 +26,7 @@ const (
 	EAMV9008DiscoverService_EAMC9007_FullMethodName = "/community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008DiscoverService/EAMC9007"
 	EAMV9008DiscoverService_EAMC9008_FullMethodName = "/community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008DiscoverService/EAMC9008"
 	EAMV9008DiscoverService_EAMC9009_FullMethodName = "/community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008DiscoverService/EAMC9009"
+	EAMV9008DiscoverService_EAMC9010_FullMethodName = "/community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008DiscoverService/EAMC9010"
 )
 
 // EAMV9008DiscoverServiceClient is the client API for EAMV9008DiscoverService service.
@@ -38,6 +39,7 @@ type EAMV9008DiscoverServiceClient interface {
 	EAMC9007(ctx context.Context, in *entities.EAMV9007, opts ...grpc.CallOption) (*entities.EAMV9008, error)
 	EAMC9008(ctx context.Context, in *entities.EAMV9010, opts ...grpc.CallOption) (*entities.EAMV9008, error)
 	EAMC9009(ctx context.Context, in *entities.EAMV9007, opts ...grpc.CallOption) (*entities.EAMV9008, error)
+	EAMC9010(ctx context.Context, in *entities.EAMV9011, opts ...grpc.CallOption) (*entities.EAMV9008, error)
 }
 
 type eAMV9008DiscoverServiceClient struct {
@@ -108,6 +110,16 @@ func (c *eAMV9008DiscoverServiceClient) EAMC9009(ctx context.Context, in *entiti
 	return out, nil
 }
 
+func (c *eAMV9008DiscoverServiceClient) EAMC9010(ctx context.Context, in *entities.EAMV9011, opts ...grpc.CallOption) (*entities.EAMV9008, error) {
+	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
+	out := new(entities.EAMV9008)
+	err := c.cc.Invoke(ctx, EAMV9008DiscoverService_EAMC9010_FullMethodName, in, out, cOpts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // EAMV9008DiscoverServiceServer is the server API for EAMV9008DiscoverService service.
 // All implementations must embed UnimplementedEAMV9008DiscoverServiceServer
 // for forward compatibility.
@@ -118,6 +130,7 @@ type EAMV9008DiscoverServiceServer interface {
 	EAMC9007(context.Context, *entities.EAMV9007) (*entities.EAMV9008, error)
 	EAMC9008(context.Context, *entities.EAMV9010) (*entities.EAMV9008, error)
 	EAMC9009(context.Context, *entities.EAMV9007) (*entities.EAMV9008, error)
+	EAMC9010(context.Context, *entities.EAMV9011) (*entities.EAMV9008, error)
 	mustEmbedUnimplementedEAMV9008DiscoverServiceServer()
 }
 
@@ -145,6 +158,9 @@ func (UnimplementedEAMV9008DiscoverServiceServer) EAMC9008(context.Context, *ent
 }
 func (UnimplementedEAMV9008DiscoverServiceServer) EAMC9009(context.Context, *entities.EAMV9007) (*entities.EAMV9008, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method EAMC9009 not implemented")
+}
+func (UnimplementedEAMV9008DiscoverServiceServer) EAMC9010(context.Context, *entities.EAMV9011) (*entities.EAMV9008, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method EAMC9010 not implemented")
 }
 func (UnimplementedEAMV9008DiscoverServiceServer) mustEmbedUnimplementedEAMV9008DiscoverServiceServer() {
 }
@@ -276,6 +292,24 @@ func _EAMV9008DiscoverService_EAMC9009_Handler(srv interface{}, ctx context.Cont
 	return interceptor(ctx, in, info, handler)
 }
 
+func _EAMV9008DiscoverService_EAMC9010_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(entities.EAMV9011)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(EAMV9008DiscoverServiceServer).EAMC9010(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: EAMV9008DiscoverService_EAMC9010_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(EAMV9008DiscoverServiceServer).EAMC9010(ctx, req.(*entities.EAMV9011))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // EAMV9008DiscoverService_ServiceDesc is the grpc.ServiceDesc for EAMV9008DiscoverService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -306,6 +340,10 @@ var EAMV9008DiscoverService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "EAMC9009",
 			Handler:    _EAMV9008DiscoverService_EAMC9009_Handler,
+		},
+		{
+			MethodName: "EAMC9010",
+			Handler:    _EAMV9008DiscoverService_EAMC9010_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
