@@ -25,23 +25,27 @@ var File_community_apps_gramx_fifty_zero_epn_epn_node_EAMV14006_service_proto pr
 
 const file_community_apps_gramx_fifty_zero_epn_epn_node_EAMV14006_service_proto_rawDesc = "" +
 	"\n" +
-	"Dcommunity/apps/gramx/fifty/zero/epn/epn_node/EAMV14006_service.proto\x12,community.apps.gramx.fifty.zero.epn.epn_node\x1a;community/apps/gramx/fifty/zero/epn/epn_node/entities.proto2\x98\x02\n" +
+	"Dcommunity/apps/gramx/fifty/zero/epn/epn_node/EAMV14006_service.proto\x12,community.apps.gramx.fifty.zero.epn.epn_node\x1a;community/apps/gramx/fifty/zero/epn/epn_node/entities.proto2\x97\x03\n" +
 	"\x18EAMV14006DiscoverService\x12}\n" +
 	"\tEAMC14003\x127.community.apps.gramx.fifty.zero.epn.epn_node.EAMV14005\x1a7.community.apps.gramx.fifty.zero.epn.epn_node.EAMV14006\x12}\n" +
-	"\tEAMC14004\x127.community.apps.gramx.fifty.zero.epn.epn_node.EAMV14007\x1a7.community.apps.gramx.fifty.zero.epn.epn_node.EAMV14006BfZdgithub.com/50gramx/eapp-golang-domain/community/apps/gramx/fifty/zero/epn/epn_node/services;servicesb\x06proto3"
+	"\tEAMC14004\x127.community.apps.gramx.fifty.zero.epn.epn_node.EAMV14007\x1a7.community.apps.gramx.fifty.zero.epn.epn_node.EAMV14006\x12}\n" +
+	"\tEAMC14005\x127.community.apps.gramx.fifty.zero.epn.epn_node.EAMV14008\x1a7.community.apps.gramx.fifty.zero.epn.epn_node.EAMV14006BfZdgithub.com/50gramx/eapp-golang-domain/community/apps/gramx/fifty/zero/epn/epn_node/services;servicesb\x06proto3"
 
 var file_community_apps_gramx_fifty_zero_epn_epn_node_EAMV14006_service_proto_goTypes = []any{
 	(*entities.EAMV14005)(nil), // 0: community.apps.gramx.fifty.zero.epn.epn_node.EAMV14005
 	(*entities.EAMV14007)(nil), // 1: community.apps.gramx.fifty.zero.epn.epn_node.EAMV14007
-	(*entities.EAMV14006)(nil), // 2: community.apps.gramx.fifty.zero.epn.epn_node.EAMV14006
+	(*entities.EAMV14008)(nil), // 2: community.apps.gramx.fifty.zero.epn.epn_node.EAMV14008
+	(*entities.EAMV14006)(nil), // 3: community.apps.gramx.fifty.zero.epn.epn_node.EAMV14006
 }
 var file_community_apps_gramx_fifty_zero_epn_epn_node_EAMV14006_service_proto_depIdxs = []int32{
 	0, // 0: community.apps.gramx.fifty.zero.epn.epn_node.EAMV14006DiscoverService.EAMC14003:input_type -> community.apps.gramx.fifty.zero.epn.epn_node.EAMV14005
 	1, // 1: community.apps.gramx.fifty.zero.epn.epn_node.EAMV14006DiscoverService.EAMC14004:input_type -> community.apps.gramx.fifty.zero.epn.epn_node.EAMV14007
-	2, // 2: community.apps.gramx.fifty.zero.epn.epn_node.EAMV14006DiscoverService.EAMC14003:output_type -> community.apps.gramx.fifty.zero.epn.epn_node.EAMV14006
-	2, // 3: community.apps.gramx.fifty.zero.epn.epn_node.EAMV14006DiscoverService.EAMC14004:output_type -> community.apps.gramx.fifty.zero.epn.epn_node.EAMV14006
-	2, // [2:4] is the sub-list for method output_type
-	0, // [0:2] is the sub-list for method input_type
+	2, // 2: community.apps.gramx.fifty.zero.epn.epn_node.EAMV14006DiscoverService.EAMC14005:input_type -> community.apps.gramx.fifty.zero.epn.epn_node.EAMV14008
+	3, // 3: community.apps.gramx.fifty.zero.epn.epn_node.EAMV14006DiscoverService.EAMC14003:output_type -> community.apps.gramx.fifty.zero.epn.epn_node.EAMV14006
+	3, // 4: community.apps.gramx.fifty.zero.epn.epn_node.EAMV14006DiscoverService.EAMC14004:output_type -> community.apps.gramx.fifty.zero.epn.epn_node.EAMV14006
+	3, // 5: community.apps.gramx.fifty.zero.epn.epn_node.EAMV14006DiscoverService.EAMC14005:output_type -> community.apps.gramx.fifty.zero.epn.epn_node.EAMV14006
+	3, // [3:6] is the sub-list for method output_type
+	0, // [0:3] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
 	0, // [0:0] is the sub-list for extension extendee
 	0, // [0:0] is the sub-list for field type_name

@@ -22,6 +22,7 @@ const _ = grpc.SupportPackageIsVersion9
 const (
 	EAMV14006DiscoverService_EAMC14003_FullMethodName = "/community.apps.gramx.fifty.zero.epn.epn_node.EAMV14006DiscoverService/EAMC14003"
 	EAMV14006DiscoverService_EAMC14004_FullMethodName = "/community.apps.gramx.fifty.zero.epn.epn_node.EAMV14006DiscoverService/EAMC14004"
+	EAMV14006DiscoverService_EAMC14005_FullMethodName = "/community.apps.gramx.fifty.zero.epn.epn_node.EAMV14006DiscoverService/EAMC14005"
 )
 
 // EAMV14006DiscoverServiceClient is the client API for EAMV14006DiscoverService service.
@@ -30,6 +31,7 @@ const (
 type EAMV14006DiscoverServiceClient interface {
 	EAMC14003(ctx context.Context, in *entities.EAMV14005, opts ...grpc.CallOption) (*entities.EAMV14006, error)
 	EAMC14004(ctx context.Context, in *entities.EAMV14007, opts ...grpc.CallOption) (*entities.EAMV14006, error)
+	EAMC14005(ctx context.Context, in *entities.EAMV14008, opts ...grpc.CallOption) (*entities.EAMV14006, error)
 }
 
 type eAMV14006DiscoverServiceClient struct {
@@ -60,12 +62,23 @@ func (c *eAMV14006DiscoverServiceClient) EAMC14004(ctx context.Context, in *enti
 	return out, nil
 }
 
+func (c *eAMV14006DiscoverServiceClient) EAMC14005(ctx context.Context, in *entities.EAMV14008, opts ...grpc.CallOption) (*entities.EAMV14006, error) {
+	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
+	out := new(entities.EAMV14006)
+	err := c.cc.Invoke(ctx, EAMV14006DiscoverService_EAMC14005_FullMethodName, in, out, cOpts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // EAMV14006DiscoverServiceServer is the server API for EAMV14006DiscoverService service.
 // All implementations must embed UnimplementedEAMV14006DiscoverServiceServer
 // for forward compatibility.
 type EAMV14006DiscoverServiceServer interface {
 	EAMC14003(context.Context, *entities.EAMV14005) (*entities.EAMV14006, error)
 	EAMC14004(context.Context, *entities.EAMV14007) (*entities.EAMV14006, error)
+	EAMC14005(context.Context, *entities.EAMV14008) (*entities.EAMV14006, error)
 	mustEmbedUnimplementedEAMV14006DiscoverServiceServer()
 }
 
@@ -81,6 +94,9 @@ func (UnimplementedEAMV14006DiscoverServiceServer) EAMC14003(context.Context, *e
 }
 func (UnimplementedEAMV14006DiscoverServiceServer) EAMC14004(context.Context, *entities.EAMV14007) (*entities.EAMV14006, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method EAMC14004 not implemented")
+}
+func (UnimplementedEAMV14006DiscoverServiceServer) EAMC14005(context.Context, *entities.EAMV14008) (*entities.EAMV14006, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method EAMC14005 not implemented")
 }
 func (UnimplementedEAMV14006DiscoverServiceServer) mustEmbedUnimplementedEAMV14006DiscoverServiceServer() {
 }
@@ -140,6 +156,24 @@ func _EAMV14006DiscoverService_EAMC14004_Handler(srv interface{}, ctx context.Co
 	return interceptor(ctx, in, info, handler)
 }
 
+func _EAMV14006DiscoverService_EAMC14005_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(entities.EAMV14008)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(EAMV14006DiscoverServiceServer).EAMC14005(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: EAMV14006DiscoverService_EAMC14005_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(EAMV14006DiscoverServiceServer).EAMC14005(ctx, req.(*entities.EAMV14008))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // EAMV14006DiscoverService_ServiceDesc is the grpc.ServiceDesc for EAMV14006DiscoverService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -154,6 +188,10 @@ var EAMV14006DiscoverService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "EAMC14004",
 			Handler:    _EAMV14006DiscoverService_EAMC14004_Handler,
+		},
+		{
+			MethodName: "EAMC14005",
+			Handler:    _EAMV14006DiscoverService_EAMC14005_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
