@@ -185,6 +185,7 @@ type EAMV15004 struct {
 	Eamvt15009    *structpb.ListValue    `protobuf:"bytes,3,opt,name=eamvt15009,proto3" json:"eamvt15009,omitempty"`
 	Eamvt15010    *structpb.ListValue    `protobuf:"bytes,4,opt,name=eamvt15010,proto3" json:"eamvt15010,omitempty"`
 	Eamvt15011    *structpb.ListValue    `protobuf:"bytes,5,opt,name=eamvt15011,proto3" json:"eamvt15011,omitempty"`
+	Eamvt15016    *structpb.ListValue    `protobuf:"bytes,6,opt,name=eamvt15016,proto3" json:"eamvt15016,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -250,6 +251,13 @@ func (x *EAMV15004) GetEamvt15010() *structpb.ListValue {
 func (x *EAMV15004) GetEamvt15011() *structpb.ListValue {
 	if x != nil {
 		return x.Eamvt15011
+	}
+	return nil
+}
+
+func (x *EAMV15004) GetEamvt15016() *structpb.ListValue {
+	if x != nil {
+		return x.Eamvt15016
 	}
 	return nil
 }
@@ -383,7 +391,7 @@ const file_community_apps_gramx_fifty_zero_epn_epn_circle_entities_proto_rawDesc
 	"\tEAMV15003\x12\x1e\n" +
 	"\n" +
 	"eamvt15006\x18\x01 \x01(\tR\n" +
-	"eamvt15006\"\xff\x01\n" +
+	"eamvt15006\"\xbb\x02\n" +
 	"\tEAMV15004\x12\x1e\n" +
 	"\n" +
 	"eamvt15007\x18\x01 \x01(\tR\n" +
@@ -399,7 +407,10 @@ const file_community_apps_gramx_fifty_zero_epn_epn_circle_entities_proto_rawDesc
 	"eamvt15010\x12:\n" +
 	"\n" +
 	"eamvt15011\x18\x05 \x01(\v2\x1a.google.protobuf.ListValueR\n" +
-	"eamvt15011\"K\n" +
+	"eamvt15011\x12:\n" +
+	"\n" +
+	"eamvt15016\x18\x06 \x01(\v2\x1a.google.protobuf.ListValueR\n" +
+	"eamvt15016\"K\n" +
 	"\tEAMV15005\x12\x1e\n" +
 	"\n" +
 	"eamvt15012\x18\x01 \x01(\tR\n" +
@@ -444,11 +455,12 @@ var file_community_apps_gramx_fifty_zero_epn_epn_circle_entities_proto_depIdxs =
 	6, // 3: community.apps.gramx.fifty.zero.epn.epn_circle.EAMV15004.eamvt15009:type_name -> google.protobuf.ListValue
 	6, // 4: community.apps.gramx.fifty.zero.epn.epn_circle.EAMV15004.eamvt15010:type_name -> google.protobuf.ListValue
 	6, // 5: community.apps.gramx.fifty.zero.epn.epn_circle.EAMV15004.eamvt15011:type_name -> google.protobuf.ListValue
-	6, // [6:6] is the sub-list for method output_type
-	6, // [6:6] is the sub-list for method input_type
-	6, // [6:6] is the sub-list for extension type_name
-	6, // [6:6] is the sub-list for extension extendee
-	0, // [0:6] is the sub-list for field type_name
+	6, // 6: community.apps.gramx.fifty.zero.epn.epn_circle.EAMV15004.eamvt15016:type_name -> google.protobuf.ListValue
+	7, // [7:7] is the sub-list for method output_type
+	7, // [7:7] is the sub-list for method input_type
+	7, // [7:7] is the sub-list for extension type_name
+	7, // [7:7] is the sub-list for extension extendee
+	0, // [0:7] is the sub-list for field type_name
 }
 
 func init() { file_community_apps_gramx_fifty_zero_epn_epn_circle_entities_proto_init() }
