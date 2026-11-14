@@ -190,6 +190,8 @@ type EAMV15004 struct {
 	Eamvt15018    *structpb.ListValue    `protobuf:"bytes,8,opt,name=eamvt15018,proto3" json:"eamvt15018,omitempty"`
 	Eamvt15019    *structpb.ListValue    `protobuf:"bytes,9,opt,name=eamvt15019,proto3" json:"eamvt15019,omitempty"`
 	Eamvt15020    *structpb.ListValue    `protobuf:"bytes,10,opt,name=eamvt15020,proto3" json:"eamvt15020,omitempty"`
+	Eamvt15025    string                 `protobuf:"bytes,11,opt,name=eamvt15025,proto3" json:"eamvt15025,omitempty"`
+	Eamvt15026    *structpb.ListValue    `protobuf:"bytes,12,opt,name=eamvt15026,proto3" json:"eamvt15026,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -290,6 +292,20 @@ func (x *EAMV15004) GetEamvt15019() *structpb.ListValue {
 func (x *EAMV15004) GetEamvt15020() *structpb.ListValue {
 	if x != nil {
 		return x.Eamvt15020
+	}
+	return nil
+}
+
+func (x *EAMV15004) GetEamvt15025() string {
+	if x != nil {
+		return x.Eamvt15025
+	}
+	return ""
+}
+
+func (x *EAMV15004) GetEamvt15026() *structpb.ListValue {
+	if x != nil {
+		return x.Eamvt15026
 	}
 	return nil
 }
@@ -491,7 +507,7 @@ const file_community_apps_gramx_fifty_zero_epn_epn_circle_entities_proto_rawDesc
 	"\tEAMV15003\x12\x1e\n" +
 	"\n" +
 	"eamvt15006\x18\x01 \x01(\tR\n" +
-	"eamvt15006\"\x8f\x04\n" +
+	"eamvt15006\"\xeb\x04\n" +
 	"\tEAMV15004\x12\x1e\n" +
 	"\n" +
 	"eamvt15007\x18\x01 \x01(\tR\n" +
@@ -523,7 +539,13 @@ const file_community_apps_gramx_fifty_zero_epn_epn_circle_entities_proto_rawDesc
 	"\n" +
 	"eamvt15020\x18\n" +
 	" \x01(\v2\x1a.google.protobuf.ListValueR\n" +
-	"eamvt15020\"K\n" +
+	"eamvt15020\x12\x1e\n" +
+	"\n" +
+	"eamvt15025\x18\v \x01(\tR\n" +
+	"eamvt15025\x12:\n" +
+	"\n" +
+	"eamvt15026\x18\f \x01(\v2\x1a.google.protobuf.ListValueR\n" +
+	"eamvt15026\"K\n" +
 	"\tEAMV15005\x12\x1e\n" +
 	"\n" +
 	"eamvt15012\x18\x01 \x01(\tR\n" +
@@ -586,11 +608,12 @@ var file_community_apps_gramx_fifty_zero_epn_epn_circle_entities_proto_depIdxs =
 	7,  // 7: community.apps.gramx.fifty.zero.epn.epn_circle.EAMV15004.eamvt15018:type_name -> google.protobuf.ListValue
 	7,  // 8: community.apps.gramx.fifty.zero.epn.epn_circle.EAMV15004.eamvt15019:type_name -> google.protobuf.ListValue
 	7,  // 9: community.apps.gramx.fifty.zero.epn.epn_circle.EAMV15004.eamvt15020:type_name -> google.protobuf.ListValue
-	10, // [10:10] is the sub-list for method output_type
-	10, // [10:10] is the sub-list for method input_type
-	10, // [10:10] is the sub-list for extension type_name
-	10, // [10:10] is the sub-list for extension extendee
-	0,  // [0:10] is the sub-list for field type_name
+	7,  // 10: community.apps.gramx.fifty.zero.epn.epn_circle.EAMV15004.eamvt15026:type_name -> google.protobuf.ListValue
+	11, // [11:11] is the sub-list for method output_type
+	11, // [11:11] is the sub-list for method input_type
+	11, // [11:11] is the sub-list for extension type_name
+	11, // [11:11] is the sub-list for extension extendee
+	0,  // [0:11] is the sub-list for field type_name
 }
 
 func init() { file_community_apps_gramx_fifty_zero_epn_epn_circle_entities_proto_init() }
