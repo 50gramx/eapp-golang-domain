@@ -445,6 +445,14 @@ type EAMV9008 struct {
 	Eamvt9039     *structpb.ListValue    `protobuf:"bytes,15,opt,name=eamvt9039,proto3" json:"eamvt9039,omitempty"`
 	Eamvt9040     string                 `protobuf:"bytes,16,opt,name=eamvt9040,proto3" json:"eamvt9040,omitempty"`
 	Eamvt9041     string                 `protobuf:"bytes,17,opt,name=eamvt9041,proto3" json:"eamvt9041,omitempty"`
+	Eamvt9050     string                 `protobuf:"bytes,18,opt,name=eamvt9050,proto3" json:"eamvt9050,omitempty"`
+	Eamvt9051     string                 `protobuf:"bytes,19,opt,name=eamvt9051,proto3" json:"eamvt9051,omitempty"`
+	Eamvt9052     *structpb.ListValue    `protobuf:"bytes,20,opt,name=eamvt9052,proto3" json:"eamvt9052,omitempty"`
+	Eamvt9053     *structpb.ListValue    `protobuf:"bytes,21,opt,name=eamvt9053,proto3" json:"eamvt9053,omitempty"`
+	Eamvt9054     *structpb.ListValue    `protobuf:"bytes,22,opt,name=eamvt9054,proto3" json:"eamvt9054,omitempty"`
+	Eamvt9055     *structpb.ListValue    `protobuf:"bytes,23,opt,name=eamvt9055,proto3" json:"eamvt9055,omitempty"`
+	Eamvt9056     *structpb.ListValue    `protobuf:"bytes,24,opt,name=eamvt9056,proto3" json:"eamvt9056,omitempty"`
+	Eamvt9057     *structpb.ListValue    `protobuf:"bytes,25,opt,name=eamvt9057,proto3" json:"eamvt9057,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -596,6 +604,62 @@ func (x *EAMV9008) GetEamvt9041() string {
 		return x.Eamvt9041
 	}
 	return ""
+}
+
+func (x *EAMV9008) GetEamvt9050() string {
+	if x != nil {
+		return x.Eamvt9050
+	}
+	return ""
+}
+
+func (x *EAMV9008) GetEamvt9051() string {
+	if x != nil {
+		return x.Eamvt9051
+	}
+	return ""
+}
+
+func (x *EAMV9008) GetEamvt9052() *structpb.ListValue {
+	if x != nil {
+		return x.Eamvt9052
+	}
+	return nil
+}
+
+func (x *EAMV9008) GetEamvt9053() *structpb.ListValue {
+	if x != nil {
+		return x.Eamvt9053
+	}
+	return nil
+}
+
+func (x *EAMV9008) GetEamvt9054() *structpb.ListValue {
+	if x != nil {
+		return x.Eamvt9054
+	}
+	return nil
+}
+
+func (x *EAMV9008) GetEamvt9055() *structpb.ListValue {
+	if x != nil {
+		return x.Eamvt9055
+	}
+	return nil
+}
+
+func (x *EAMV9008) GetEamvt9056() *structpb.ListValue {
+	if x != nil {
+		return x.Eamvt9056
+	}
+	return nil
+}
+
+func (x *EAMV9008) GetEamvt9057() *structpb.ListValue {
+	if x != nil {
+		return x.Eamvt9057
+	}
+	return nil
 }
 
 type EAMV9009 struct {
@@ -800,7 +864,7 @@ const file_community_apps_gramx_fifty_zero_epn_epn_deployments_entities_proto_ra
 	"\teamvt9018\x18\x01 \x01(\v2\x1a.google.protobuf.ListValueR\teamvt9018\x12\x1c\n" +
 	"\teamvt9019\x18\x02 \x01(\tR\teamvt9019\"(\n" +
 	"\bEAMV9007\x12\x1c\n" +
-	"\teamvt9020\x18\x01 \x01(\tR\teamvt9020\"\xa0\x06\n" +
+	"\teamvt9020\x18\x01 \x01(\tR\teamvt9020\"\xb8\t\n" +
 	"\bEAMV9008\x12\x1c\n" +
 	"\teamvt9028\x18\x01 \x01(\tR\teamvt9028\x12\x1c\n" +
 	"\teamvt9021\x18\x02 \x01(\tR\teamvt9021\x12\x1c\n" +
@@ -819,7 +883,15 @@ const file_community_apps_gramx_fifty_zero_epn_epn_deployments_entities_proto_ra
 	"\teamvt9038\x18\x0e \x01(\v2\x1a.google.protobuf.ListValueR\teamvt9038\x128\n" +
 	"\teamvt9039\x18\x0f \x01(\v2\x1a.google.protobuf.ListValueR\teamvt9039\x12\x1c\n" +
 	"\teamvt9040\x18\x10 \x01(\tR\teamvt9040\x12\x1c\n" +
-	"\teamvt9041\x18\x11 \x01(\tR\teamvt9041\"F\n" +
+	"\teamvt9041\x18\x11 \x01(\tR\teamvt9041\x12\x1c\n" +
+	"\teamvt9050\x18\x12 \x01(\tR\teamvt9050\x12\x1c\n" +
+	"\teamvt9051\x18\x13 \x01(\tR\teamvt9051\x128\n" +
+	"\teamvt9052\x18\x14 \x01(\v2\x1a.google.protobuf.ListValueR\teamvt9052\x128\n" +
+	"\teamvt9053\x18\x15 \x01(\v2\x1a.google.protobuf.ListValueR\teamvt9053\x128\n" +
+	"\teamvt9054\x18\x16 \x01(\v2\x1a.google.protobuf.ListValueR\teamvt9054\x128\n" +
+	"\teamvt9055\x18\x17 \x01(\v2\x1a.google.protobuf.ListValueR\teamvt9055\x128\n" +
+	"\teamvt9056\x18\x18 \x01(\v2\x1a.google.protobuf.ListValueR\teamvt9056\x128\n" +
+	"\teamvt9057\x18\x19 \x01(\v2\x1a.google.protobuf.ListValueR\teamvt9057\"F\n" +
 	"\bEAMV9009\x12\x1c\n" +
 	"\teamvt9029\x18\x01 \x01(\tR\teamvt9029\x12\x1c\n" +
 	"\teamvt9030\x18\x02 \x01(\tR\teamvt9030\"F\n" +
@@ -881,11 +953,17 @@ var file_community_apps_gramx_fifty_zero_epn_epn_deployments_entities_proto_depI
 	11, // 18: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008.eamvt9037:type_name -> google.protobuf.ListValue
 	11, // 19: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008.eamvt9038:type_name -> google.protobuf.ListValue
 	11, // 20: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008.eamvt9039:type_name -> google.protobuf.ListValue
-	21, // [21:21] is the sub-list for method output_type
-	21, // [21:21] is the sub-list for method input_type
-	21, // [21:21] is the sub-list for extension type_name
-	21, // [21:21] is the sub-list for extension extendee
-	0,  // [0:21] is the sub-list for field type_name
+	11, // 21: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008.eamvt9052:type_name -> google.protobuf.ListValue
+	11, // 22: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008.eamvt9053:type_name -> google.protobuf.ListValue
+	11, // 23: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008.eamvt9054:type_name -> google.protobuf.ListValue
+	11, // 24: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008.eamvt9055:type_name -> google.protobuf.ListValue
+	11, // 25: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008.eamvt9056:type_name -> google.protobuf.ListValue
+	11, // 26: community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008.eamvt9057:type_name -> google.protobuf.ListValue
+	27, // [27:27] is the sub-list for method output_type
+	27, // [27:27] is the sub-list for method input_type
+	27, // [27:27] is the sub-list for extension type_name
+	27, // [27:27] is the sub-list for extension extendee
+	0,  // [0:27] is the sub-list for field type_name
 }
 
 func init() { file_community_apps_gramx_fifty_zero_epn_epn_deployments_entities_proto_init() }
