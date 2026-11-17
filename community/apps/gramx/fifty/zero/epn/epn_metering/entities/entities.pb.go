@@ -329,6 +329,7 @@ type EAMV11006 struct {
 	Eamvt11033    *structpb.ListValue    `protobuf:"bytes,11,opt,name=eamvt11033,proto3" json:"eamvt11033,omitempty"`
 	Eamvt11034    *structpb.ListValue    `protobuf:"bytes,12,opt,name=eamvt11034,proto3" json:"eamvt11034,omitempty"`
 	Eamvt11035    string                 `protobuf:"bytes,13,opt,name=eamvt11035,proto3" json:"eamvt11035,omitempty"`
+	Eamvt11036    string                 `protobuf:"bytes,14,opt,name=eamvt11036,proto3" json:"eamvt11036,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -454,6 +455,13 @@ func (x *EAMV11006) GetEamvt11035() string {
 	return ""
 }
 
+func (x *EAMV11006) GetEamvt11036() string {
+	if x != nil {
+		return x.Eamvt11036
+	}
+	return ""
+}
+
 var File_community_apps_gramx_fifty_zero_epn_epn_metering_entities_proto protoreflect.FileDescriptor
 
 const file_community_apps_gramx_fifty_zero_epn_epn_metering_entities_proto_rawDesc = "" +
@@ -505,7 +513,7 @@ const file_community_apps_gramx_fifty_zero_epn_epn_metering_entities_proto_rawDe
 	"eamvt11021\x12\x1e\n" +
 	"\n" +
 	"eamvt11022\x18\x03 \x01(\tR\n" +
-	"eamvt11022\"\xa7\x05\n" +
+	"eamvt11022\"\xc7\x05\n" +
 	"\tEAMV11006\x12\x1e\n" +
 	"\n" +
 	"eamvt11023\x18\x01 \x01(\tR\n" +
@@ -546,7 +554,10 @@ const file_community_apps_gramx_fifty_zero_epn_epn_metering_entities_proto_rawDe
 	"eamvt11034\x12\x1e\n" +
 	"\n" +
 	"eamvt11035\x18\r \x01(\tR\n" +
-	"eamvt11035BjZhgithub.com/50gramx/eapp-golang-domain/community/apps/gramx/fifty/zero/epn/epn_metering/entities;entitiesb\x06proto3"
+	"eamvt11035\x12\x1e\n" +
+	"\n" +
+	"eamvt11036\x18\x0e \x01(\tR\n" +
+	"eamvt11036BjZhgithub.com/50gramx/eapp-golang-domain/community/apps/gramx/fifty/zero/epn/epn_metering/entities;entitiesb\x06proto3"
 
 var (
 	file_community_apps_gramx_fifty_zero_epn_epn_metering_entities_proto_rawDescOnce sync.Once
