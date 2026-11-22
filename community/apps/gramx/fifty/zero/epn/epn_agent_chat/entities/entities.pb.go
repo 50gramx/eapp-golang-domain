@@ -27,6 +27,7 @@ type EAMV6001 struct {
 	Eamvt6001     string                 `protobuf:"bytes,1,opt,name=eamvt6001,proto3" json:"eamvt6001,omitempty"`
 	Eamvt6002     string                 `protobuf:"bytes,2,opt,name=eamvt6002,proto3" json:"eamvt6002,omitempty"`
 	Eamvt6003     string                 `protobuf:"bytes,3,opt,name=eamvt6003,proto3" json:"eamvt6003,omitempty"`
+	Eamvt6045     string                 `protobuf:"bytes,4,opt,name=eamvt6045,proto3" json:"eamvt6045,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -78,6 +79,13 @@ func (x *EAMV6001) GetEamvt6002() string {
 func (x *EAMV6001) GetEamvt6003() string {
 	if x != nil {
 		return x.Eamvt6003
+	}
+	return ""
+}
+
+func (x *EAMV6001) GetEamvt6045() string {
+	if x != nil {
+		return x.Eamvt6045
 	}
 	return ""
 }
@@ -674,11 +682,12 @@ var File_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto proto
 
 const file_community_apps_gramx_fifty_zero_epn_epn_agent_chat_entities_proto_rawDesc = "" +
 	"\n" +
-	"Acommunity/apps/gramx/fifty/zero/epn/epn_agent_chat/entities.proto\x122community.apps.gramx.fifty.zero.epn.epn_agent_chat\x1a\x1cgoogle/protobuf/struct.proto\"d\n" +
+	"Acommunity/apps/gramx/fifty/zero/epn/epn_agent_chat/entities.proto\x122community.apps.gramx.fifty.zero.epn.epn_agent_chat\x1a\x1cgoogle/protobuf/struct.proto\"\x82\x01\n" +
 	"\bEAMV6001\x12\x1c\n" +
 	"\teamvt6001\x18\x01 \x01(\tR\teamvt6001\x12\x1c\n" +
 	"\teamvt6002\x18\x02 \x01(\tR\teamvt6002\x12\x1c\n" +
-	"\teamvt6003\x18\x03 \x01(\tR\teamvt6003\"\xb2\x05\n" +
+	"\teamvt6003\x18\x03 \x01(\tR\teamvt6003\x12\x1c\n" +
+	"\teamvt6045\x18\x04 \x01(\tR\teamvt6045\"\xb2\x05\n" +
 	"\bEAMV6002\x12\x1c\n" +
 	"\teamvt6004\x18\x01 \x01(\tR\teamvt6004\x12\x1c\n" +
 	"\teamvt6008\x18\x02 \x01(\tR\teamvt6008\x12\x1c\n" +
